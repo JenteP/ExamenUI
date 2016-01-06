@@ -1,17 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="fed38f62-5d50-4efe-aabd-49d8a1d91fc5" name="Default" comment="simple routing">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/hall/hall-blueprint.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/hall/hall-list.component.ts" />
+    <list default="true" id="fed38f62-5d50-4efe-aabd-49d8a1d91fc5" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/boot.js" afterPath="$PROJECT_DIR$/app/boot.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/boot.js.map" afterPath="$PROJECT_DIR$/app/boot.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/boot.ts" afterPath="$PROJECT_DIR$/app/boot.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/factory.component.js" afterPath="$PROJECT_DIR$/app/factory.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/factory.component.js.map" afterPath="$PROJECT_DIR$/app/factory.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/factory.component.ts" afterPath="$PROJECT_DIR$/app/factory.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
     </list>
     <ignored path="Examen.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -442,7 +433,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452091061885</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="simple routing">
+      <created>1452108838263</created>
+      <option name="number" value="00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1452108838263</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TodoView">
