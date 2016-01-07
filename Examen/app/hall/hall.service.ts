@@ -15,4 +15,11 @@ export class HallService {
             resolve => setTimeout(()=>resolve(HALLS),2000)
         );
     }
+
+    getHall(name: string) {
+        return this.getHalls().then(
+            halls =>
+                halls.filter(hall => hall.name == name)[0]
+            );
+    }
 }

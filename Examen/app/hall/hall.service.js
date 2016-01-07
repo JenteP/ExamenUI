@@ -28,6 +28,11 @@ System.register(['angular2/core', './mock-halls'], function(exports_1) {
                 HallService.prototype.getHallsSlowly = function () {
                     return new Promise(function (resolve) { return setTimeout(function () { return resolve(mock_halls_1.HALLS); }, 2000); });
                 };
+                HallService.prototype.getHall = function (name) {
+                    return this.getHalls().then(function (halls) {
+                        return halls.filter(function (hall) { return hall.name == name; })[0];
+                    });
+                };
                 HallService = __decorate([
                     core_1.Injectable(), 
                     __metadata('design:paramtypes', [])

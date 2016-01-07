@@ -1,4 +1,4 @@
-System.register(['angular2/core', './hall-detail.component', './hall.service'], function(exports_1) {
+System.register(['angular2/core', './hall.service', "./hall-quickview.component", "angular2/router"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,40 +8,44 @@ System.register(['angular2/core', './hall-detail.component', './hall.service'], 
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, hall_detail_component_1, hall_service_1;
+    var core_1, hall_service_1, hall_quickview_component_1, router_1;
     var HallListComponent;
     return {
         setters:[
             function (core_1_1) {
                 core_1 = core_1_1;
             },
-            function (hall_detail_component_1_1) {
-                hall_detail_component_1 = hall_detail_component_1_1;
-            },
             function (hall_service_1_1) {
                 hall_service_1 = hall_service_1_1;
+            },
+            function (hall_quickview_component_1_1) {
+                hall_quickview_component_1 = hall_quickview_component_1_1;
+            },
+            function (router_1_1) {
+                router_1 = router_1_1;
             }],
         execute: function() {
             HallListComponent = (function () {
-                function HallListComponent(_hallService) {
+                function HallListComponent(_hallService, _router) {
                     this._hallService = _hallService;
+                    this._router = _router;
                     this.actionReminderTime = 86400000;
                 }
-                HallListComponent.prototype.getHalls = function () {
-                    var _this = this;
-                    this._hallService.getHalls().then(function (halls) { return _this.halls = halls; });
+                HallListComponent.prototype.onSelect = function (hall) {
+                    this._router.navigate(['HallDetail', { name: hall.name }]);
                 };
                 HallListComponent.prototype.ngOnInit = function () {
-                    this.getHalls();
+                    var _this = this;
+                    this._hallService.getHalls().then(function (halls) { return _this.halls = halls; });
                 };
                 HallListComponent = __decorate([
                     core_1.Component({
                         selector: 'hall-list',
-                        template: "\n        <h3>Hall List:</h3>\n        <div class=\"halls\">\n            <div *ngFor=\"#hall of halls\">\n                <hall-detail [hall]=\"hall\"></hall-detail>\n            </div>\n        </div>\n    ",
-                        directives: [hall_detail_component_1.HallDetailComponent],
+                        template: "\n        <h3>Hall List:</h3>\n        <div class=\"halls\">\n            <div *ngFor=\"#hall of halls\"\n                (click)=\"onSelect(hall)\">\n                <hall-quickview [hall]=\"hall\"></hall-quickview>\n            </div>\n        </div>\n    ",
+                        directives: [hall_quickview_component_1.HallQuickViewComponent],
                         providers: [hall_service_1.HallService]
                     }), 
-                    __metadata('design:paramtypes', [hall_service_1.HallService])
+                    __metadata('design:paramtypes', [hall_service_1.HallService, router_1.Router])
                 ], HallListComponent);
                 return HallListComponent;
             })();

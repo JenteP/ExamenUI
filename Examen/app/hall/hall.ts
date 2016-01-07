@@ -10,4 +10,7 @@ export interface Hall {
     itemsRequiringAction: Item[];
     origin: Point;
     points: Point[];
+    color:string;
+    borderColor:string;
+    highLightColor:string;
 }

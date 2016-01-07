@@ -25,7 +25,8 @@ import {RouteConfig,ROUTER_DIRECTIVES} from "angular2/router";
 })
 @RouteConfig([
     {path:'/list',              name: 'List',      component:HallListComponent},
-    {path:'/blueprint',         name: 'BluePrint',  component:HallBluePrintComponent}
+    {path:'/blueprint',         name: 'BluePrint',  component:HallBluePrintComponent},
+    {path:'/hall/:name',         name: 'HallDetail',  component:HallDetailComponent}
 ])
 export class Factory implements OnInit{
     public name = 'GoodId';
