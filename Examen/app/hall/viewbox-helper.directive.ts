@@ -7,12 +7,17 @@ import {Hall} from "./hall";
     selector: '[viewBoxHelper]'
 })
 export class ViewBoxHelperDirective {
-    @Input('viewBoxHelper') _halls:Hall[];
-    @Input() set halls(halls:Hall[]) {
+    private _halls:Hall[];
+    @Input('viewBoxHelper') set halls(halls:Hall[]) {
         this._halls = halls;
         this._singleHall = false;
         this.defineBounderies();
     }
+    /*@Input() set halls(halls:Hall[]) {
+        this._halls = halls;
+        this._singleHall = false;
+        this.defineBounderies();
+    }*/
     @Input() set hall(hall:Hall) {
         var halls:Hall[] = [hall];
         this._halls = halls;

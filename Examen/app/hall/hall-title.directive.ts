@@ -11,15 +11,19 @@ import {Hall} from "./hall";
     }
 })
 export class HallTitleDirective {
-    @Input('hallTitle') _hall:Hall;
+    private _hall:Hall;
+    @Input('hallTitle') set hall(hall:Hall) {
+        this._hall = hall;
+    }
     private _offset:boolean;
     @Input() set offset(offset:boolean) {
         this._offset = offset;
-    }
-    @Input() set hall(hall:Hall) {
-        this._hall = hall;
         this.setPoints();
     }
+    /*@Input() set hall(hall:Hall) {
+        this._hall = hall;
+        this.setPoints();
+    }*/
 
     constructor(private el: ElementRef, private renderer: Renderer) {
     }
@@ -29,7 +33,7 @@ export class HallTitleDirective {
         var originY = 0;
         if (this._offset) {
             var originX = this._hall.origin.x;
-            var originY = this._hall.origin.y;
+            var originY = this._hall.origin.y +10;
         }
         this.renderer.setElementAttribute(this.el,"x",originX + "");
         this.renderer.setElementAttribute(this.el,"y",(originY+5) + "");

@@ -1,0 +1,14 @@
+[
+  {
+    "name":"MACHINE",
+    "image":"/icons/machine.svg"
+  },
+  {
+    "name":"BELT",
+    "image":"/icons/belt.svg"
+  },
+  {
+    "name":"LAMP",
+    "image":"/icons/lamp.svg"
+  }
+]

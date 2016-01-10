@@ -79,10 +79,6 @@ System.register(['angular2/core'], function(exports_1) {
                 };
                 __decorate([
                     core_1.Input('itemCircle'), 
-                    __metadata('design:type', Object)
-                ], ItemCircleDirective.prototype, "_item", void 0);
-                __decorate([
-                    core_1.Input(), 
                     __metadata('design:type', Object), 
                     __metadata('design:paramtypes', [Object])
                 ], ItemCircleDirective.prototype, "item", null);

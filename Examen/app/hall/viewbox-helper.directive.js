@@ -31,6 +31,11 @@ System.register(['angular2/core'], function(exports_1) {
                     configurable: true
                 });
                 Object.defineProperty(ViewBoxHelperDirective.prototype, "hall", {
+                    /*@Input() set halls(halls:Hall[]) {
+                        this._halls = halls;
+                        this._singleHall = false;
+                        this.defineBounderies();
+                    }*/
                     set: function (hall) {
                         var halls = [hall];
                         this._halls = halls;
@@ -68,10 +73,6 @@ System.register(['angular2/core'], function(exports_1) {
                 };
                 __decorate([
                     core_1.Input('viewBoxHelper'), 
-                    __metadata('design:type', Array)
-                ], ViewBoxHelperDirective.prototype, "_halls", void 0);
-                __decorate([
-                    core_1.Input(), 
                     __metadata('design:type', Array), 
                     __metadata('design:paramtypes', [Array])
                 ], ViewBoxHelperDirective.prototype, "halls", null);

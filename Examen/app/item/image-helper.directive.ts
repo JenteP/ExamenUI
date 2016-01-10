@@ -10,8 +10,8 @@ import {Category} from "./category";
     providers: [CategoryService]
 })
 export class ImageHelperDirective {
-    @Input('imageHelper') _item:Item;
-    @Input() set item(item:Item) {
+    private _item:Item;
+    @Input('imageHelper') set item(item:Item) {
         this._item = item;
         this.getIcon();
     }
@@ -38,12 +38,23 @@ export class ImageHelperDirective {
         this.renderer.setElementAttribute(this.el,"y",""+(this._item.point.y - positionCorrection));
         this.renderer.setElementAttribute(this.el,"height",""+(scaleCorrection));
         this.renderer.setElementAttribute(this.el,"width",""+(scaleCorrection));
+        //credit to Bert Willekens
         this.el.nativeElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', this._image);
     }
 
     getIcon() {
         //this._categoryService.getCategory(this._item.category).then(cat => this._image = cat.image);
-        Promise.resolve(this._categoryService.getCategory(this._item.category)).then(cat => this.setImage(cat));
+        //Promise.resolve(this._categoryService.getCategory(this._item.category)).then(cat => this.setImage(cat));
+        this._categoryService.getCategories().subscribe(cats => this.filterCategorie(cats));
+    }
+
+    filterCategorie(categories:Category[]) {
+        for (var i = 0; i < categories.length; i++) {
+            if (categories[i].name == this._item.category) {
+                this.setImage(categories[i]);
+                return;
+            }
+        }
     }
 
     setImage(category: Category) {

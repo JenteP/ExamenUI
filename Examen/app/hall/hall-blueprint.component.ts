@@ -24,10 +24,10 @@ import {HallTitleDirective} from "./hall-title.directive";
         </div>
 
         <div class="hallMap">
-            <svg [viewBoxHelper]="halls" [halls]="halls" height="100%" width="100%">
+            <svg [viewBoxHelper]="halls" height="100%" width="100%">
                 <g *ngFor="#hall of halls" (click)="onSelect(hall)">
-                    <polygon [hallPoints]="hall" [hall]="hall" [offset]="true"/>
-                    <text [hallTitle]="hall" [hall]="hall" [offset]="true" font-family="Verdana" font-size="5">{{hall.name}}</text>
+                    <polygon [hallPoints]="hall" [offset]="true"/>
+                    <text [hallTitle]="hall" [offset]="true" font-family="Verdana" font-size="5">{{hall.name}}</text>
                 </g>
             </svg>
         </div>
@@ -47,13 +47,16 @@ import {HallTitleDirective} from "./hall-title.directive";
 
         .hallInfo {
             max-width: 20em;
+            min-width:15em;
             width: 40%;
             float: left;
         }
 
         .hallMap {
-            width: 55%;
-            float: right;
+            min-width:25em;
+            max-width:75em;
+            width: 70%;
+            float: left;
         }
     `],
     directives: [HallQuickViewComponent,HallPointsDirective,ViewBoxHelperDirective,HallTitleDirective],
@@ -66,7 +69,8 @@ export class HallBluePrintComponent implements OnInit{
     constructor(private _hallService: HallService,
                 private _router:Router){}
     getHalls() {
-        this._hallService.getHalls().then(halls => this.halls = halls);
+        //this._hallService.getHalls().then(halls => this.halls = halls);
+        this._hallService.getHalls().subscribe((halls:Hall[]) => this.halls = halls);
     }
 
     onSelect(hall:Hall) {

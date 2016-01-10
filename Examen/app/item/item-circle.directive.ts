@@ -11,8 +11,8 @@ import {Item} from "./item";
     }
 })
 export class ItemCircleDirective {
-    @Input('itemCircle') _item:Item;
-    @Input() set item(item:Item) {
+    private _item:Item;
+    @Input('itemCircle') set item(item:Item) {
         this._item = item;
     }
     private _time: number;

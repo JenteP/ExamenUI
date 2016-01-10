@@ -34,7 +34,8 @@ System.register(['angular2/core', "./action", "./../hall/hall.service", "./actio
                     this._hallService = _hallService;
                     this._actionTypeService = _actionTypeService;
                     this.types = [];
-                    this._actionTypeService.getActionTypes().then(function (acts) { return _this.setActionTypes(acts); });
+                    //this._actionTypeService.getActionTypes().then(acts => this.setActionTypes(acts));
+                    this._actionTypeService.getActionTypes().subscribe(function (actionTypes) { return _this.setActionTypes(actionTypes); });
                 }
                 Object.defineProperty(ActionDetailComponent.prototype, "action", {
                     set: function (action) {
@@ -48,9 +49,6 @@ System.register(['angular2/core', "./action", "./../hall/hall.service", "./actio
                         this.types.push(actionTypes[i].name);
                     }
                 };
-                ActionDetailComponent.prototype.onTypeSelect = function (type) {
-                    console.log("ActionType: " + type);
-                };
                 __decorate([
                     core_2.Input(), 
                     __metadata('design:type', action_1.Action), 
@@ -59,8 +57,8 @@ System.register(['angular2/core', "./action", "./../hall/hall.service", "./actio
                 ActionDetailComponent = __decorate([
                     core_1.Component({
                         selector: 'action-detail',
-                        template: "\n            <div class=\"actionDetails\" *ngIf=\"_action\">\n                <div class=\"detail\">\n                    <input type=\"datetime-local\" [(ngModel)]=\"_action.date\">\n                </div>\n                <div class=\"detail\">\n                    <select [(ngModel)]=\"_action.type\">\n                        <option *ngFor=\"#type of types\">{{type}}</option>\n                    </select>\n                </div>\n                <div class=\"detail\">\n                    <textarea [(ngModel)]=\"_action.description\" rows=\"4\" cols=\"30\"></textarea>\n                </div>\n            </div>\n        ",
-                        styles: ["\n        .actionDetails {\n            display:block;\n            background-color:#eaeae1;\n            margin: 0;\n            padding: 0;\n            heigth: 100%;\n            max-heigth:100%;\n        }\n\n        .detail {\n            margin: 0;\n            padding: 2%;\n            width: 96%;\n            max-width: 96%;\n        }\n\n        input {\n            margin: 0;\n            padding: 0;\n            width: 100%;\n            max-width: 100%;\n        }\n\n        select {\n            margin: 0;\n            padding: 0;\n            width: 100%;\n            max-width: 100%;\n        }\n\n        textarea {\n            margin: 0;\n            padding: 0;\n            width: 100%;\n            max-width: 100%;\n        }\n    "],
+                        template: "\n            <div class=\"actionDetails\" *ngIf=\"_action\">\n                <label for=\"date\">Date</label>\n                <input id=\"date\" type=\"datetime-local\" [(ngModel)]=\"_action.date\">\n\n                <label for=\"type\">Type</label>\n                <select id=\"type\" [(ngModel)]=\"_action.type\">\n                    <option *ngFor=\"#type of types\">{{type}}</option>\n                </select>\n\n                <label for=\"descriptionDetail\">Description</label>\n                <textarea id=\"descriptionDetail\" [(ngModel)]=\"_action.description\" rows=\"4\" cols=\"30\"></textarea>\n\n            </div>\n        ",
+                        styles: ["\n        .actionDetails {\n            display:block;\n            margin: 0;\n            padding: 0.2em;\n            border: solid 1px lightgray;\n        }\n\n        .detail {\n            margin: 0;\n            padding: 0.2em;\n            width: 96%;\n            max-width: 96%;\n        }\n\n        input {\n            margin: 0;\n            padding: 0;\n            width: 100%;\n            max-width: 100%;\n        }\n\n        select {\n            margin: 0;\n            padding: 0;\n            width: 100%;\n            max-width: 100%;\n        }\n\n        textarea {\n            margin: 0;\n            padding: 0;\n            width: 100%;\n            max-width: 100%;\n        }\n    "],
                         providers: [action_type_service_1.ActionTypeService]
                     }), 
                     __metadata('design:paramtypes', [hall_service_1.HallService, action_type_service_1.ActionTypeService])

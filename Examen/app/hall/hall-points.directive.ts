@@ -11,15 +11,20 @@ import {Hall} from "./hall";
     }
 })
 export class HallPointsDirective {
-    @Input('hallPoints') _hall:Hall;
+    private _hall:Hall;
+    @Input('hallPoints') set hall(hall:Hall) {
+        this._hall = hall;
+
+    };
     private _offset:boolean;
     @Input() set offset(offset:boolean) {
         this._offset = offset;
-    }
-    @Input() set hall(hall:Hall) {
-        this._hall = hall;
         this.setPoints();
     }
+    /*@Input() set hall(hall:Hall) {
+        this._hall = hall;
+        this.setPoints();
+    }*/
 
     constructor(private el: ElementRef, private renderer: Renderer) {
     }

@@ -1,0 +1,95 @@
+{ "name": "Packaging", "surface":200,
+  "items": [
+    {"category":"LAMP","name":"PackagingLamp001",
+      "productNumber":"PALMP001", "description":"A lamp in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":10,"y":10}
+    },
+    {"category":"LAMP","name":"PackagingLamp002",
+      "productNumber":"PALMP002", "description":"A lamp in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":10,"y":25}
+    },
+    {"category":"LAMP","name":"PackagingLamp003",
+      "productNumber":"PALMP003", "description":"A lamp in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":30,"y":25}
+    },
+    {"category":"LAMP","name":"PackagingLamp004",
+      "productNumber":"PALMP004", "description":"A lamp in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":50,"y":25}
+    },
+    {"category":"LAMP","name":"PackagingLamp005",
+      "productNumber":"PALMP005", "description":"A lamp in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":10,"y":40}
+    },
+    {"category":"LAMP","name":"PackagingLamp006",
+      "productNumber":"PALMP006", "description":"A lamp in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":30,"y":40}
+    },
+    {"category":"LAMP","name":"PackagingLamp007",
+      "productNumber":"PALMP007", "description":"A lamp in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":50,"y":40}
+    },
+    {"category":"MACHINE","name":"PackagingMachine001",
+      "productNumber":"PAMAC001", "description":"A machine in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":20,"y":25}
+    },
+    {"category":"MACHINE","name":"PackagingMachine002",
+      "productNumber":"PAMAC002", "description":"A machine in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":40,"y":25}
+    },
+    {"category":"MACHINE","name":"PackagingMachine003",
+      "productNumber":"PAMAC003", "description":"A machine in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":20,"y":40}
+    },
+    {"category":"MACHINE","name":"PackagingMachine004",
+      "productNumber":"PAMAC004", "description":"A machine in the packaging hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":40,"y":40}
+    }],
+  "origin":{
+    "x":40,
+    "y":20
+  },
+  "points":[
+    {
+      "x":20,
+      "y":0
+    },{
+      "x":20,
+      "y":20
+    },{
+      "x":60,
+      "y":20
+    },{
+      "x":60,
+      "y":50
+    },{
+      "x":0,
+      "y":50
+    }
+  ],
+  "color":"yellow",
+  "borderColor":"orange",
+  "highLightColor":"white",
+  "circleRadius":2
+}

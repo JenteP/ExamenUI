@@ -10,6 +10,7 @@ import {Router,RouteParams} from "angular2/router";
 import {Category} from "./category";
 import {CategoryService} from "./category.service";
 import {Action} from "../action/action";
+import {Hall} from "../hall/hall";
 
 
 
@@ -17,55 +18,75 @@ import {Action} from "../action/action";
     selector: 'item-detail',
     inputs: ['item'],
     template: `
-            <div class="itemDetails" *ngIf="item">
-                <h4>{{item.name}}</h4>
-                <div>
-                    <input [(ngModel)]="item.name" placeholder="name">
-                </div>
-                <div>
-                    <input [(ngModel)]="item.productNumber">
-                </div>
-                <div>
-                    <select [(ngModel)]="item.category">
+            <div id="itemDetails" *ngIf="item">
+                <h4>{{item.name}}  <i class="glyphicon glyphicon-floppy-disk" (click)="post()"></i></h4>
+                <div id="itemDetail">
+                    <label for="name">Name</label>
+                    <input id="name" [(ngModel)]="item.name" placeholder="name">
+                    <label for="productNumber">Product Number</label>
+                    <input id="productNumber" [(ngModel)]="item.productNumber">
+                    <label for="category">Category</label>
+                    <select id="category" [(ngModel)]="item.category">
                         <option *ngFor="#category of categories">{{category}}</option>
                     </select>
+                    <label for="description">Description</label>
+                    <textarea id="description" [(ngModel)]="item.description" rows="4" cols="30"></textarea>
                 </div>
-                <div>
-                    <input [(ngModel)]="item.description">
-                </div>
-                <div class="actions">
+                <div id="actions">
                     <div class="actionDetails">
-                        <h5>Last action:</h5>
+                        <h5>Last action</h5>
                         <action-detail [action]="item.lastAction"></action-detail>
                     </div>
                     <div class="actionDetails">
-                        <h5>Next action:</h5>
+                        <h5>Next action</h5>
                         <action-detail [action]="item.nextAction"></action-detail>
-                        <input type="button" (click)="onActionDone(item.nextAction)" value="Done">
+                        <i class="glyphicon glyphicon-ok" (click)="onActionDone(item.nextAction)"></i>
                     </div>
                 </div>
             </div>
         `,
     directives:[ActionDetailComponent],
     styles: [`
-        .itemDetails {
-            background-color:#f5f5f0;
+        #itemDetails {
+            border: 1px solid lightgray;
         }
 
         .actionDetails {
-            display: block;
-            width: 90%;
-            max-width: 90%;
+            display: inline-block;
+            width: 45%;
+            max-width: 20em;
+            float: left;
         }
 
         input {
-            margin-left:5%;
-            width:90%;
+            margin:0.1em 0;
+            width:100%;
+        }
+        textarea {
+            margin:0.1em 0;
+            width:100%;
+        }
+        select {
+            margin:0.1em 0;
+            width:100%;
         }
 
-        select {
-            margin-left:5%;
+        #itemDetail {
             width:90%;
+            max-width:40em;
+            margin-left:1em;
+        }
+
+        #saveButton {
+            width:5em;
+        }
+
+        i {
+            cursor:pointer;
+        }
+
+        i:hover {
+            color: lightgreen;
         }
     `],
     providers: [CategoryService]
@@ -78,8 +99,10 @@ export class ItemDetailComponent implements OnInit{
                 private _router:Router,
                 private _routeParams:RouteParams) {
         this.categories = [];
-        this._categoryService.getCategories().then(cats => this.setCategories(cats));
+        //this._categoryService.getCategories().then(cats => this.setCategories(cats));
+        this._categoryService.getCategories().subscribe(cats => this.setCategories(cats));
     }
+
     setCategories(categories: Category[]) {
         for (var i = 0; i < categories.length; i++) {
             this.categories.push(categories[i].name);
@@ -94,6 +117,21 @@ export class ItemDetailComponent implements OnInit{
     ngOnInit() {
         let hallName = this._routeParams.get('name');
         let itemName = this._routeParams.get('itemname');
-        this._hallService.getItemFromHall(hallName,itemName).then(item => this.item = item);
+        //this._hallService.getItemFromHall(hallName,itemName).then(item => this.item = item);
+        this._hallService.getHall(hallName).subscribe((hall:Hall) => this.setItem(hall,itemName));
+    }
+
+    setItem(hall: Hall, itemName: string) {
+        for (var i = 0; i < hall.items.length; i++) {
+            if (hall.items[i].name == itemName) {
+                this.item = hall.items[i];
+                return;
+            }
+        }
+    }
+
+    post() {
+        this._hallService.postItem(this.item);
+
     }
 }

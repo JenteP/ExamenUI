@@ -19,9 +19,9 @@ import {ImageHelperDirective} from "../item/image-helper.directive"
             <div  *ngIf="hall">
                 <div class="hallMap">
                     <svg [viewBoxHelper]="halls" [hall]="hall" height="100%" width="100%">
-                        <polygon [hallPoints]="hall" [hall]="hall" (click)="onSelect(hall)"/>
-                        <circle *ngFor="#item of hall.items" [itemCircle]="item" [item]="item" [time]="time" [radius]="hall.circleRadius" (click)="onSelect(item)"/>
-                        <image *ngFor="#item of hall.items" [imageHelper]="item" [item]="item" [radius]="hall.circleRadius" (click)="onSelect(item)"></image>
+                        <polygon [hallPoints]="hall" [offset]="false" (click)="onSelect(hall)"/>
+                        <circle *ngFor="#item of hall.items" [itemCircle]="item" [time]="time" [radius]="hall.circleRadius" (click)="onSelect(item)"/>
+                        <image *ngFor="#item of hall.items" [imageHelper]="item" [radius]="hall.circleRadius" (click)="onSelect(item)"></image>
                     </svg>
                 </div>
 
@@ -64,7 +64,11 @@ export class HallDetailComponent implements OnInit{
     ngOnInit() {
         let name = this._routeParams.get('name');
         this._hallService.getActionReminderTimer().then(time => this.time = time);
-        this._hallService.getHall(name).then(hall => this.hall = hall).then(hall => this.getItemsWithAction(hall));
+        //this._hallService.getHall(name).then(hall => this.hall = hall).then(hall => this.getItemsWithAction(hall));
+        this._hallService.getHall(name).subscribe((hall:Hall) => {
+            this.hall = hall;
+            this.getItemsWithAction(this.hall);
+        });
     }
 
     getItemsWithAction(hall: Hall) {

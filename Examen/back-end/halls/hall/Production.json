@@ -1,0 +1,81 @@
+{ "name": "Production", "surface":300,
+  "items": [
+    {"category":"LAMP","name":"ProductionLamp001",
+      "productNumber":"PLMP001", "description":"A lamp in the production hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":10,"y":10}
+    },{"category":"LAMP","name":"ProductionLamp002",
+      "productNumber":"PLMP002", "description":"A lamp in the production hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":35,"y":50}
+    },
+    {"category":"LAMP","name":"ProductionLamp003",
+      "productNumber":"PLMP003", "description":"A lamp in the production hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"REPLACEMENT","description":"Bulb defective"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":80,"y":60}
+    }
+  ,{"category":"BELT","name":"ProductionBelt001",
+      "productNumber":"PBLT001", "description":"A belt in the production hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":20,"y":40}
+    }
+  ,{"category":"BELT","name":"ProductionBelt002",
+      "productNumber":"PBLT002", "description":"A belt in the production hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":40,"y":60}
+    }
+  ,{"category":"MACHINE","name":"ProductionMachine001",
+      "productNumber":"PMAC001", "description":"A machine in the production hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":60,"y":60}
+    },{"category":"MACHINE","name":"ProductionMachine002",
+      "productNumber":"PMAC002", "description":"A machine in the production hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":20,"y":20}
+    }],
+  "origin":{
+    "x":0,
+    "y":20
+  },
+  "points":[
+    {
+      "x":40,
+      "y":0
+    },{
+      "x":40,
+      "y":50
+    },{
+      "x":100,
+      "y":50
+    },{
+      "x":100,
+      "y":80
+    },{
+      "x":30,
+      "y":80
+    },{
+      "x":30,
+      "y":50
+    },{
+      "x":5,
+      "y":50
+    },{
+      "x":5,
+      "y":55
+    },{
+      "x":0,
+      "y":55
+    }
+  ],
+  "color":"blue",
+  "borderColor":"darkblue",
+  "highLightColor":"lightblue",
+  "circleRadius":5
+}

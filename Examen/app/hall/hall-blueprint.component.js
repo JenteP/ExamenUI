@@ -42,7 +42,8 @@ System.register(['angular2/core', './hall.service', "./hall-quickview.component"
                 }
                 HallBluePrintComponent.prototype.getHalls = function () {
                     var _this = this;
-                    this._hallService.getHalls().then(function (halls) { return _this.halls = halls; });
+                    //this._hallService.getHalls().then(halls => this.halls = halls);
+                    this._hallService.getHalls().subscribe(function (halls) { return _this.halls = halls; });
                 };
                 HallBluePrintComponent.prototype.onSelect = function (hall) {
                     this._router.navigate(['HallDetail', { name: hall.name }]);
@@ -53,8 +54,8 @@ System.register(['angular2/core', './hall.service', "./hall-quickview.component"
                 HallBluePrintComponent = __decorate([
                     core_1.Component({
                         selector: 'hall-blueprint',
-                        template: "\n        <div class=\"hallInfo\">\n            <ul>\n                <li *ngFor=\"#hall of halls\" (click)=\"onSelect(hall)\">\n                    <hall-quickview [hall]=\"hall\"></hall-quickview>\n                </li>\n            </ul>\n        </div>\n\n        <div class=\"hallMap\">\n            <svg [viewBoxHelper]=\"halls\" [halls]=\"halls\" height=\"100%\" width=\"100%\">\n                <g *ngFor=\"#hall of halls\" (click)=\"onSelect(hall)\">\n                    <polygon [hallPoints]=\"hall\" [hall]=\"hall\" [offset]=\"true\"/>\n                    <text [hallTitle]=\"hall\" [hall]=\"hall\" [offset]=\"true\" font-family=\"Verdana\" font-size=\"5\">{{hall.name}}</text>\n                </g>\n            </svg>\n        </div>\n    ",
-                        styles: ["\n        polygon {\n            cursor: pointer;\n        }\n\n        text {\n            cursor:pointer\n        }\n\n        li {\n            list-style-type:none;\n        }\n\n        .hallInfo {\n            max-width: 20em;\n            width: 40%;\n            float: left;\n        }\n\n        .hallMap {\n            width: 55%;\n            float: right;\n        }\n    "],
+                        template: "\n        <div class=\"hallInfo\">\n            <ul>\n                <li *ngFor=\"#hall of halls\" (click)=\"onSelect(hall)\">\n                    <hall-quickview [hall]=\"hall\"></hall-quickview>\n                </li>\n            </ul>\n        </div>\n\n        <div class=\"hallMap\">\n            <svg [viewBoxHelper]=\"halls\" height=\"100%\" width=\"100%\">\n                <g *ngFor=\"#hall of halls\" (click)=\"onSelect(hall)\">\n                    <polygon [hallPoints]=\"hall\" [offset]=\"true\"/>\n                    <text [hallTitle]=\"hall\" [offset]=\"true\" font-family=\"Verdana\" font-size=\"5\">{{hall.name}}</text>\n                </g>\n            </svg>\n        </div>\n    ",
+                        styles: ["\n        polygon {\n            cursor: pointer;\n        }\n\n        text {\n            cursor:pointer\n        }\n\n        li {\n            list-style-type:none;\n        }\n\n        .hallInfo {\n            max-width: 20em;\n            min-width:15em;\n            width: 40%;\n            float: left;\n        }\n\n        .hallMap {\n            min-width:25em;\n            max-width:75em;\n            width: 70%;\n            float: left;\n        }\n    "],
                         directives: [hall_quickview_component_1.HallQuickViewComponent, hall_points_directive_1.HallPointsDirective, viewbox_helper_directive_1.ViewBoxHelperDirective, hall_title_directive_1.HallTitleDirective],
                         providers: [hall_service_1.HallService]
                     }), 

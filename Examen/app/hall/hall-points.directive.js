@@ -17,20 +17,25 @@ System.register(['angular2/core'], function(exports_1) {
             }],
         execute: function() {
             HallPointsDirective = (function () {
+                /*@Input() set hall(hall:Hall) {
+                    this._hall = hall;
+                    this.setPoints();
+                }*/
                 function HallPointsDirective(el, renderer) {
                     this.el = el;
                     this.renderer = renderer;
                 }
-                Object.defineProperty(HallPointsDirective.prototype, "offset", {
-                    set: function (offset) {
-                        this._offset = offset;
+                Object.defineProperty(HallPointsDirective.prototype, "hall", {
+                    set: function (hall) {
+                        this._hall = hall;
                     },
                     enumerable: true,
                     configurable: true
                 });
-                Object.defineProperty(HallPointsDirective.prototype, "hall", {
-                    set: function (hall) {
-                        this._hall = hall;
+                ;
+                Object.defineProperty(HallPointsDirective.prototype, "offset", {
+                    set: function (offset) {
+                        this._offset = offset;
                         this.setPoints();
                     },
                     enumerable: true,
@@ -66,18 +71,14 @@ System.register(['angular2/core'], function(exports_1) {
                 };
                 __decorate([
                     core_1.Input('hallPoints'), 
-                    __metadata('design:type', Object)
-                ], HallPointsDirective.prototype, "_hall", void 0);
+                    __metadata('design:type', Object), 
+                    __metadata('design:paramtypes', [Object])
+                ], HallPointsDirective.prototype, "hall", null);
                 __decorate([
                     core_1.Input(), 
                     __metadata('design:type', Boolean), 
                     __metadata('design:paramtypes', [Boolean])
                 ], HallPointsDirective.prototype, "offset", null);
-                __decorate([
-                    core_1.Input(), 
-                    __metadata('design:type', Object), 
-                    __metadata('design:paramtypes', [Object])
-                ], HallPointsDirective.prototype, "hall", null);
                 HallPointsDirective = __decorate([
                     core_1.Directive({
                         selector: '[hallPoints]',

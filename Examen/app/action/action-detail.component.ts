@@ -14,32 +14,30 @@ import {Input} from "angular2/core";
     selector: 'action-detail',
     template: `
             <div class="actionDetails" *ngIf="_action">
-                <div class="detail">
-                    <input type="datetime-local" [(ngModel)]="_action.date">
-                </div>
-                <div class="detail">
-                    <select [(ngModel)]="_action.type">
-                        <option *ngFor="#type of types">{{type}}</option>
-                    </select>
-                </div>
-                <div class="detail">
-                    <textarea [(ngModel)]="_action.description" rows="4" cols="30"></textarea>
-                </div>
+                <label for="date">Date</label>
+                <input id="date" type="datetime-local" [(ngModel)]="_action.date">
+
+                <label for="type">Type</label>
+                <select id="type" [(ngModel)]="_action.type">
+                    <option *ngFor="#type of types">{{type}}</option>
+                </select>
+
+                <label for="descriptionDetail">Description</label>
+                <textarea id="descriptionDetail" [(ngModel)]="_action.description" rows="4" cols="30"></textarea>
+
             </div>
         `,
     styles: [`
         .actionDetails {
             display:block;
-            background-color:#eaeae1;
             margin: 0;
-            padding: 0;
-            heigth: 100%;
-            max-heigth:100%;
+            padding: 0.2em;
+            border: solid 1px lightgray;
         }
 
         .detail {
             margin: 0;
-            padding: 2%;
+            padding: 0.2em;
             width: 96%;
             max-width: 96%;
         }
@@ -76,16 +74,13 @@ export class ActionDetailComponent {
 
     constructor(private _hallService: HallService, private _actionTypeService: ActionTypeService) {
         this.types = [];
-        this._actionTypeService.getActionTypes().then(acts => this.setActionTypes(acts));
+        //this._actionTypeService.getActionTypes().then(acts => this.setActionTypes(acts));
+        this._actionTypeService.getActionTypes().subscribe((actionTypes:ActionType[]) => this.setActionTypes(actionTypes));
     }
 
     setActionTypes(actionTypes: ActionType[]) {
         for (var i = 0; i < actionTypes.length; i++) {
             this.types.push(actionTypes[i].name);
         }
-    }
-
-    onTypeSelect(type:ActionType) {
-        console.log("ActionType: " + type);
     }
 }

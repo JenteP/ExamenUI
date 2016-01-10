@@ -12,7 +12,6 @@ import {Router} from "angular2/router";
 @Component({
     selector: 'hall-list',
     template: `
-        <h3>Hall List:</h3>
         <div class="halls">
             <div class="hallOverview" *ngFor="#hall of halls"
                 (click)="onSelect(hall)">
@@ -28,6 +27,12 @@ import {Router} from "angular2/router";
 
         .halls {
             padding:0;
+        }
+
+        .hallOverview {
+            display:inline-block;
+            max-width: 20em;
+            width:100%;
         }
 
     `],
@@ -46,6 +51,7 @@ export class HallListComponent implements OnInit{
     }
 
     ngOnInit() {
-        this._hallService.getHalls().then(halls => this.halls = halls);
+        //this._hallService.getHalls().then(halls => this.halls = halls);
+        this._hallService.getHalls().subscribe((halls:Hall[]) => this.halls = halls);
     }
 }

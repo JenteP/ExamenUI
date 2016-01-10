@@ -1,0 +1,113 @@
+{ "name": "Shipping", "surface":200,
+  "items": [
+    {"category":"LAMP","name":"ShippingLamp001",
+      "productNumber":"SLMP001", "description":"A lamp in the shipping hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":10,"y":17}
+    },
+    {"category":"LAMP","name":"ShippingLamp002",
+      "productNumber":"SLMP002", "description":"A lamp in the shipping hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":40,"y":17}
+    },
+    {"category":"LAMP","name":"ShippingLamp003",
+      "productNumber":"SLMP003", "description":"A lamp in the shipping hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":40,"y":30}
+    },
+    {"category":"BELT","name":"ShippingBelt001",
+      "productNumber":"SBLT001", "description":"A belt in the shipping hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":10,"y":10}
+    },
+    {"category":"BELT","name":"ShippingBelt002",
+      "productNumber":"SBLT002", "description":"A belt in the shipping hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":25,"y":10}
+    },
+    {"category":"BELT","name":"ShippingBelt003",
+      "productNumber":"SBLT003", "description":"A belt in the shipping hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-11T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":40,"y":10}
+    },
+    {"category":"MACHINE","name":"ShippingMachine001",
+      "productNumber":"SMAC001", "description":"A machine in the shipping hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-15T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":50,"y":3}
+    },
+    {"category":"MACHINE","name":"ShippingMachine002",
+      "productNumber":"SMAC002", "description":"A machine in the shipping hall",
+      "lastAction":{"date":"2016-01-09T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "nextAction":{"date":"2016-01-11T19:05:34.980","type":"MAINTENANCE","description":"Regular maintenance"},
+      "point":{"x":55,"y":3}
+    }],
+  "origin":{
+    "x":40,
+    "y":0
+  },
+  "points":[
+    {
+      "x":5,
+      "y":0
+    },{
+      "x":5,
+      "y":5
+    },{
+      "x":15,
+      "y":5
+    },{
+      "x":15,
+      "y":0
+    },{
+      "x":20,
+      "y":0
+    },{
+      "x":20,
+      "y":5
+    },{
+      "x":30,
+      "y":5
+    },{
+      "x":30,
+      "y":0
+    },{
+      "x":35,
+      "y":0
+    },{
+      "x":35,
+      "y":5
+    },{
+      "x":45,
+      "y":5
+    },{
+      "x":45,
+      "y":0
+    },{
+      "x":60,
+      "y":0
+    },{
+      "x":60,
+      "y":40
+    },{
+      "x":20,
+      "y":40
+    },{
+      "x":20,
+      "y":20
+    },{
+      "x":0,
+      "y":20
+    }
+  ],
+  "color":"green",
+  "borderColor":"darkgreen",
+  "highLightColor":"lightgreen",
+  "circleRadius":2
+}

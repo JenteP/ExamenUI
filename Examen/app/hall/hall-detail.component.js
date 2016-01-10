@@ -44,7 +44,11 @@ System.register(['angular2/core', "./hall.service", "angular2/router", "./hall-p
                     var _this = this;
                     var name = this._routeParams.get('name');
                     this._hallService.getActionReminderTimer().then(function (time) { return _this.time = time; });
-                    this._hallService.getHall(name).then(function (hall) { return _this.hall = hall; }).then(function (hall) { return _this.getItemsWithAction(hall); });
+                    //this._hallService.getHall(name).then(hall => this.hall = hall).then(hall => this.getItemsWithAction(hall));
+                    this._hallService.getHall(name).subscribe(function (hall) {
+                        _this.hall = hall;
+                        _this.getItemsWithAction(_this.hall);
+                    });
                 };
                 HallDetailComponent.prototype.getItemsWithAction = function (hall) {
                     if (this.hall != null) {
@@ -71,7 +75,7 @@ System.register(['angular2/core', "./hall.service", "angular2/router", "./hall-p
                     core_1.Component({
                         selector: 'hall-detail',
                         inputs: ['hall'],
-                        template: "\n            <div  *ngIf=\"hall\">\n                <div class=\"hallMap\">\n                    <svg [viewBoxHelper]=\"halls\" [hall]=\"hall\" height=\"100%\" width=\"100%\">\n                        <polygon [hallPoints]=\"hall\" [hall]=\"hall\" (click)=\"onSelect(hall)\"/>\n                        <circle *ngFor=\"#item of hall.items\" [itemCircle]=\"item\" [item]=\"item\" [time]=\"time\" [radius]=\"hall.circleRadius\" (click)=\"onSelect(item)\"/>\n                        <image *ngFor=\"#item of hall.items\" [imageHelper]=\"item\" [item]=\"item\" [radius]=\"hall.circleRadius\" (click)=\"onSelect(item)\"></image>\n                    </svg>\n                </div>\n\n                <div class=\"hallInfo\">\n                    <h2>{{hall.name}} details!</h2><h4>Oppervlakte: {{hall.surface}}m\u00B2</h4>\n                    <h4>Aantal items: {{hall.items.length}}</h4>\n                    <h4 *ngIf=\"itemsWithAction\">Aantal items met actie: {{itemsWithAction.length}}</h4>\n                </div>\n            </div>\n        ",
+                        template: "\n            <div  *ngIf=\"hall\">\n                <div class=\"hallMap\">\n                    <svg [viewBoxHelper]=\"halls\" [hall]=\"hall\" height=\"100%\" width=\"100%\">\n                        <polygon [hallPoints]=\"hall\" [offset]=\"false\" (click)=\"onSelect(hall)\"/>\n                        <circle *ngFor=\"#item of hall.items\" [itemCircle]=\"item\" [time]=\"time\" [radius]=\"hall.circleRadius\" (click)=\"onSelect(item)\"/>\n                        <image *ngFor=\"#item of hall.items\" [imageHelper]=\"item\" [radius]=\"hall.circleRadius\" (click)=\"onSelect(item)\"></image>\n                    </svg>\n                </div>\n\n                <div class=\"hallInfo\">\n                    <h2>{{hall.name}} details!</h2><h4>Oppervlakte: {{hall.surface}}m\u00B2</h4>\n                    <h4>Aantal items: {{hall.items.length}}</h4>\n                    <h4 *ngIf=\"itemsWithAction\">Aantal items met actie: {{itemsWithAction.length}}</h4>\n                </div>\n            </div>\n        ",
                         styles: ["\n        li {\n            list-style-type:none;\n        }\n\n        circle {\n            cursor: pointer;\n        }\n\n        image {\n            cursor: pointer;\n        }\n\n        .hallMap {\n            width:80%;\n            max-width: 150em;\n            float:left;\n        }\n    "],
                         directives: [hall_points_directive_1.HallPointsDirective, viewbox_helper_directive_1.ViewBoxHelperDirective, item_circle_directive_1.ItemCircleDirective, image_helper_directive_1.ImageHelperDirective]
                     }), 

@@ -57,12 +57,22 @@ System.register(['angular2/core', "./category.service"], function(exports_1) {
                     this.renderer.setElementAttribute(this.el, "y", "" + (this._item.point.y - positionCorrection));
                     this.renderer.setElementAttribute(this.el, "height", "" + (scaleCorrection));
                     this.renderer.setElementAttribute(this.el, "width", "" + (scaleCorrection));
+                    //credit to Bert Willekens
                     this.el.nativeElement.setAttributeNS('http://www.w3.org/1999/xlink', 'href', this._image);
                 };
                 ImageHelperDirective.prototype.getIcon = function () {
                     var _this = this;
                     //this._categoryService.getCategory(this._item.category).then(cat => this._image = cat.image);
-                    Promise.resolve(this._categoryService.getCategory(this._item.category)).then(function (cat) { return _this.setImage(cat); });
+                    //Promise.resolve(this._categoryService.getCategory(this._item.category)).then(cat => this.setImage(cat));
+                    this._categoryService.getCategories().subscribe(function (cats) { return _this.filterCategorie(cats); });
+                };
+                ImageHelperDirective.prototype.filterCategorie = function (categories) {
+                    for (var i = 0; i < categories.length; i++) {
+                        if (categories[i].name == this._item.category) {
+                            this.setImage(categories[i]);
+                            return;
+                        }
+                    }
                 };
                 ImageHelperDirective.prototype.setImage = function (category) {
                     this._image = category.image;
@@ -76,10 +86,6 @@ System.register(['angular2/core', "./category.service"], function(exports_1) {
                 };
                 __decorate([
                     core_1.Input('imageHelper'), 
-                    __metadata('design:type', Object)
-                ], ImageHelperDirective.prototype, "_item", void 0);
-                __decorate([
-                    core_1.Input(), 
                     __metadata('design:type', Object), 
                     __metadata('design:paramtypes', [Object])
                 ], ImageHelperDirective.prototype, "item", null);

@@ -40,11 +40,11 @@ System.register(['angular2/core', './hall/hall-detail.component', './hall/hall.s
             Factory = (function () {
                 function Factory(_hallService) {
                     this._hallService = _hallService;
-                    this.name = 'GoodId';
                 }
                 Factory.prototype.getHalls = function () {
                     var _this = this;
-                    this._hallService.getHalls().then(function (halls) { return _this.halls = halls; });
+                    //this._hallService.getHalls().then(halls => this.halls = halls);
+                    this._hallService.getHalls().subscribe(function (halls) { return _this.halls = halls; });
                 };
                 Factory.prototype.ngOnInit = function () {
                     this.getHalls();
@@ -52,7 +52,8 @@ System.register(['angular2/core', './hall/hall-detail.component', './hall/hall.s
                 Factory = __decorate([
                     core_1.Component({
                         selector: 'factory',
-                        template: "\n        <h1>Factory: {{name}}</h1>\n        <nav>\n            <a [routerLink]=\"['List']\">List</a>\n            <a [routerLink]=\"['BluePrint']\">Map</a>\n            <a [routerLink]=\"['Settings']\">Settings</a>\n\n        </nav>\n        <router-outlet></router-outlet>\n    ",
+                        template: "\n        <nav>\n            <ul>\n                <li><a [routerLink]=\"['List']\"><i class=\"glyphicon glyphicon-th-list\"></i></a></li>\n                <li><a [routerLink]=\"['BluePrint']\"><i class=\"glyphicon glyphicon-globe\"></i></a></li>\n                <li id=\"settings\"><a [routerLink]=\"['Settings']\"><i class=\"glyphicon glyphicon-cog\"></i></a></li>\n            </ul>\n        </nav>\n        <router-outlet></router-outlet>\n    ",
+                        styles: ["\n        ul {\n            list-style-type: none;\n            margin: 0;\n            padding: 0;\n            overflow: hidden;\n            border: 1px solid lightgray;\n        }\n\n        li {\n            float: left;\n        }\n\n        #settings {\n            float: right;\n        }\n\n        li a {\n            display: inline-block;\n            color: black;\n            text-align: center;\n            padding: 14px 16px;\n            text-decoration: none;\n            font-size: 2em;\n        }\n\n        li a:hover {\n            background-color: lightgray;\n            color:white;\n        }\n    "],
                         directives: [hall_list_component_1.HallListComponent, router_1.ROUTER_DIRECTIVES],
                         providers: [hall_service_1.HallService]
                     }),
