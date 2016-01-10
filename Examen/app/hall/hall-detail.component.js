@@ -1,4 +1,4 @@
-System.register(['angular2/core', "./hall.service", "angular2/router", "./hall-points.directive", "./viewbox-helper.directive"], function(exports_1) {
+System.register(['angular2/core', "./hall.service", "angular2/router", "./hall-points.directive", "./viewbox-helper.directive", "../item/item-circle.directive", "../item/image-helper.directive"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', "./hall.service", "angular2/router", "./hall-p
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, hall_service_1, router_1, hall_points_directive_1, viewbox_helper_directive_1;
+    var core_1, hall_service_1, router_1, hall_points_directive_1, viewbox_helper_directive_1, item_circle_directive_1, image_helper_directive_1;
     var HallDetailComponent;
     return {
         setters:[
@@ -26,6 +26,12 @@ System.register(['angular2/core', "./hall.service", "angular2/router", "./hall-p
             },
             function (viewbox_helper_directive_1_1) {
                 viewbox_helper_directive_1 = viewbox_helper_directive_1_1;
+            },
+            function (item_circle_directive_1_1) {
+                item_circle_directive_1 = item_circle_directive_1_1;
+            },
+            function (image_helper_directive_1_1) {
+                image_helper_directive_1 = image_helper_directive_1_1;
             }],
         execute: function() {
             HallDetailComponent = (function () {
@@ -37,15 +43,37 @@ System.register(['angular2/core', "./hall.service", "angular2/router", "./hall-p
                 HallDetailComponent.prototype.ngOnInit = function () {
                     var _this = this;
                     var name = this._routeParams.get('name');
-                    this._hallService.getHall(name).then(function (hall) { return _this.hall = hall; });
+                    this._hallService.getActionReminderTimer().then(function (time) { return _this.time = time; });
+                    this._hallService.getHall(name).then(function (hall) { return _this.hall = hall; }).then(function (hall) { return _this.getItemsWithAction(hall); });
+                };
+                HallDetailComponent.prototype.getItemsWithAction = function (hall) {
+                    if (this.hall != null) {
+                        this.itemsWithAction = [];
+                        var upperDate = this.getUpperDate();
+                        for (var i = 0; i < this.hall.items.length; i++) {
+                            var itemDate = new Date(this.hall.items[i].nextAction.date);
+                            if (itemDate < upperDate) {
+                                this.itemsWithAction.push(this.hall.items[i]);
+                            }
+                        }
+                    }
+                };
+                HallDetailComponent.prototype.getUpperDate = function () {
+                    var date = new Date();
+                    var milisToAdd = this.time * 60 * 60 * 1000;
+                    date.setTime(date.getTime() + milisToAdd);
+                    return date;
+                };
+                HallDetailComponent.prototype.onSelect = function (item) {
+                    this._router.navigate(['ItemDetail', { name: this.hall.name, itemname: item.name }]);
                 };
                 HallDetailComponent = __decorate([
                     core_1.Component({
                         selector: 'hall-detail',
                         inputs: ['hall'],
-                        template: "\n            <div class=\"hallDetails\" *ngIf=\"hall\">\n                <h2>{{hall.name}} details!</h2><h4>Oppervlakte: {{hall.surface}}m\u00B2</h4>\n                <h4>Aantal items: {{hall.items.length}}</h4>\n                <h4>Aantal items met actie vereist: {{hall.itemsRequiringAction.length}}</h4>\n\n                <svg [viewBoxHelper]=\"halls\" [hall]=\"hall\" height=\"100%\" width=\"100%\">\n                    <polygon [hallPoints]=\"hall\" [hall]=\"hall\" (click)=\"onSelect(hall)\"/>\n                </svg>\n            </div>\n        ",
-                        styles: ["\n        .hallDetails {\n            background-color:#eaeae1;\n        }\n    "],
-                        directives: [hall_points_directive_1.HallPointsDirective, viewbox_helper_directive_1.ViewBoxHelperDirective]
+                        template: "\n            <div  *ngIf=\"hall\">\n                <div class=\"hallInfo\">\n                    <h2>{{hall.name}} details!</h2><h4>Oppervlakte: {{hall.surface}}m\u00B2</h4>\n                    <h4>Aantal items: {{hall.items.length}}</h4>\n                    <h4 *ngIf=\"itemsWithAction\">Aantal items met actie: {{itemsWithAction.length}}</h4>\n                </div>\n\n                <div class=\"hallMap\">\n                    <svg [viewBoxHelper]=\"halls\" [hall]=\"hall\" height=\"100%\" width=\"100%\">\n                        <polygon [hallPoints]=\"hall\" [hall]=\"hall\" (click)=\"onSelect(hall)\"/>\n                        <circle *ngFor=\"#item of hall.items\" [itemCircle]=\"item\" [item]=\"item\" [time]=\"time\" [radius]=\"hall.circleRadius\" (click)=\"onSelect(item)\"/>\n                        <image *ngFor=\"#item of hall.items\" [imageHelper]=\"item\" [item]=\"item\" [radius]=\"hall.circleRadius\" (click)=\"onSelect(item)\"></image>\n                    </svg>\n                </div>\n            </div>\n        ",
+                        styles: ["\n        li {\n            list-style-type:none;\n        }\n\n        .hallInfo {\n            width: 40%;\n            float: left;\n        }\n\n        .hallMap {\n            width: 55%;\n            float: right;\n        }\n    "],
+                        directives: [hall_points_directive_1.HallPointsDirective, viewbox_helper_directive_1.ViewBoxHelperDirective, item_circle_directive_1.ItemCircleDirective, image_helper_directive_1.ImageHelperDirective]
                     }), 
                     __metadata('design:paramtypes', [hall_service_1.HallService, router_1.Router, router_1.RouteParams])
                 ], HallDetailComponent);

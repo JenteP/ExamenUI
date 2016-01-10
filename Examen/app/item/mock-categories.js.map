@@ -1,0 +1,1 @@
+{"version":3,"file":"mock-categories.js","sourceRoot":"","sources":["mock-categories.ts"],"names":[],"mappings":";QAKW,UAAU;;;;YAAV,wBAAA,UAAU,GAAe;gBAChC;oBACI,MAAM,EAAC,SAAS;oBAChB,OAAO,EAAC,oBAAoB;iBAC/B;gBACD;oBACI,MAAM,EAAC,MAAM;oBACb,OAAO,EAAC,iBAAiB;iBAC5B;gBACD;oBACI,MAAM,EAAC,MAAM;oBACb,OAAO,EAAC,iBAAiB;iBAC5B;aACJ,CAAA,CAAC"}

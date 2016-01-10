@@ -21,6 +21,7 @@ System.register(['angular2/core', './mock-halls'], function(exports_1) {
         execute: function() {
             HallService = (function () {
                 function HallService() {
+                    this._time = 24;
                 }
                 HallService.prototype.getHalls = function () {
                     return Promise.resolve(mock_halls_1.HALLS);
@@ -32,6 +33,20 @@ System.register(['angular2/core', './mock-halls'], function(exports_1) {
                     return this.getHalls().then(function (halls) {
                         return halls.filter(function (hall) { return hall.name == name; })[0];
                     });
+                };
+                HallService.prototype.getHallItems = function (name) {
+                    return this.getHalls().then(function (halls) {
+                        return halls.filter(function (hall) { return hall.name == name; })[0].items;
+                    });
+                };
+                HallService.prototype.getItemFromHall = function (hallName, itemName) {
+                    return this.getHallItems(hallName).then(function (items) { return items.filter(function (item) { return item.name == itemName; })[0]; });
+                };
+                HallService.prototype.getActionReminderTimer = function () {
+                    return Promise.resolve(this._time);
+                };
+                HallService.prototype.setActionReminderTimer = function (time) {
+                    this._time = time;
                 };
                 HallService = __decorate([
                     core_1.Injectable(), 

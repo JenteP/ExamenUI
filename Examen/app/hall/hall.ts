@@ -7,10 +7,10 @@ export interface Hall {
     name: string;
     surface: number;
     items: Item[];
-    itemsRequiringAction: Item[];
     origin: Point;
     points: Point[];
     color:string;
     borderColor:string;
     highLightColor:string;
+    circleRadius:number;
 }

@@ -50,9 +50,11 @@ export class HallPointsDirective {
     }
 
     onMouseEnter() {
-        this.setColor(this._hall.highLightColor,this._hall.borderColor);
+        if (this._offset)
+            this.setColor(this._hall.highLightColor,this._hall.borderColor);
     }
     onMouseLeave() {
-        this.setColor(this._hall.color,this._hall.borderColor);
+        if (this._offset)
+            this.setColor(this._hall.color,this._hall.borderColor);
     }
 }

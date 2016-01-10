@@ -16,7 +16,6 @@ import {RouteParams,Router} from "angular2/router";
                 <ul>
                     <li>Oppervlakte: {{hall.surface}}m²</li>
                     <li>Aantal items: {{hall.items.length}}</li>
-                    <li>Aantal items met actie vereist: {{hall.itemsRequiringAction.length}}</li>
                 </ul>
             </div>
         `,

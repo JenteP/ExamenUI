@@ -1,4 +1,4 @@
-System.register(['angular2/core', './hall.service', "./hall-quickview.component", "angular2/router", "./hall-points.directive", "./viewbox-helper.directive"], function(exports_1) {
+System.register(['angular2/core', './hall.service', "./hall-quickview.component", "angular2/router", "./hall-points.directive", "./viewbox-helper.directive", "./hall-title.directive"], function(exports_1) {
     var __decorate = (this && this.__decorate) || function (decorators, target, key, desc) {
         var c = arguments.length, r = c < 3 ? target : desc === null ? desc = Object.getOwnPropertyDescriptor(target, key) : desc, d;
         if (typeof Reflect === "object" && typeof Reflect.decorate === "function") r = Reflect.decorate(decorators, target, key, desc);
@@ -8,7 +8,7 @@ System.register(['angular2/core', './hall.service', "./hall-quickview.component"
     var __metadata = (this && this.__metadata) || function (k, v) {
         if (typeof Reflect === "object" && typeof Reflect.metadata === "function") return Reflect.metadata(k, v);
     };
-    var core_1, hall_service_1, hall_quickview_component_1, router_1, hall_points_directive_1, viewbox_helper_directive_1;
+    var core_1, hall_service_1, hall_quickview_component_1, router_1, hall_points_directive_1, viewbox_helper_directive_1, hall_title_directive_1;
     var HallBluePrintComponent;
     return {
         setters:[
@@ -29,6 +29,9 @@ System.register(['angular2/core', './hall.service', "./hall-quickview.component"
             },
             function (viewbox_helper_directive_1_1) {
                 viewbox_helper_directive_1 = viewbox_helper_directive_1_1;
+            },
+            function (hall_title_directive_1_1) {
+                hall_title_directive_1 = hall_title_directive_1_1;
             }],
         execute: function() {
             HallBluePrintComponent = (function () {
@@ -50,9 +53,9 @@ System.register(['angular2/core', './hall.service', "./hall-quickview.component"
                 HallBluePrintComponent = __decorate([
                     core_1.Component({
                         selector: 'hall-blueprint',
-                        template: "\n        <div class=\"hallInfo\">\n            <ul>\n                <li *ngFor=\"#hall of halls\" (click)=\"onSelect(hall)\">\n                    <hall-quickview [hall]=\"hall\"></hall-quickview>\n                </li>\n            </ul>\n        </div>\n\n        <div class=\"hallMap\">\n            <svg [viewBoxHelper]=\"halls\" [halls]=\"halls\" height=\"100%\" width=\"100%\">\n                <polygon *ngFor=\"#hall of halls\" [hallPoints]=\"hall\" [hall]=\"hall\" [offset]=\"true\" (click)=\"onSelect(hall)\"/>\n            </svg>\n        </div>\n    ",
-                        styles: ["\n        polygon {\n            cursor: pointer;\n        }\n\n        li {\n            list-style-type:none;\n        }\n\n        .hallInfo {\n            width: 40%;\n            float: left;\n        }\n\n        .hallMap {\n            width: 55%;\n            float: right;\n        }\n    "],
-                        directives: [hall_quickview_component_1.HallQuickViewComponent, hall_points_directive_1.HallPointsDirective, viewbox_helper_directive_1.ViewBoxHelperDirective],
+                        template: "\n        <div class=\"hallInfo\">\n            <ul>\n                <li *ngFor=\"#hall of halls\" (click)=\"onSelect(hall)\">\n                    <hall-quickview [hall]=\"hall\"></hall-quickview>\n                </li>\n            </ul>\n        </div>\n\n        <div class=\"hallMap\">\n            <svg [viewBoxHelper]=\"halls\" [halls]=\"halls\" height=\"100%\" width=\"100%\">\n                <g *ngFor=\"#hall of halls\" (click)=\"onSelect(hall)\">\n                    <polygon [hallPoints]=\"hall\" [hall]=\"hall\" [offset]=\"true\"/>\n                    <text [hallTitle]=\"hall\" [hall]=\"hall\" [offset]=\"true\" font-family=\"Verdana\" font-size=\"5\">{{hall.name}}</text>\n                </g>\n            </svg>\n        </div>\n    ",
+                        styles: ["\n        polygon {\n            cursor: pointer;\n        }\n\n        text {\n            cursor:pointer\n        }\n\n        li {\n            list-style-type:none;\n        }\n\n        .hallInfo {\n            width: 40%;\n            float: left;\n        }\n\n        .hallMap {\n            width: 55%;\n            float: right;\n        }\n    "],
+                        directives: [hall_quickview_component_1.HallQuickViewComponent, hall_points_directive_1.HallPointsDirective, viewbox_helper_directive_1.ViewBoxHelperDirective, hall_title_directive_1.HallTitleDirective],
                         providers: [hall_service_1.HallService]
                     }), 
                     __metadata('design:paramtypes', [hall_service_1.HallService, router_1.Router])

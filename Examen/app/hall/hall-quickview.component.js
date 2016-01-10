@@ -28,7 +28,7 @@ System.register(['angular2/core', "angular2/router"], function(exports_1) {
                     core_1.Component({
                         selector: 'hall-quickview',
                         inputs: ['hall'],
-                        template: "\n            <div class=\"hallQuickView\" *ngIf=\"hall\">\n                {{hall.name}}:\n                <ul>\n                    <li>Oppervlakte: {{hall.surface}}m\u00B2</li>\n                    <li>Aantal items: {{hall.items.length}}</li>\n                    <li>Aantal items met actie vereist: {{hall.itemsRequiringAction.length}}</li>\n                </ul>\n            </div>\n        ",
+                        template: "\n            <div class=\"hallQuickView\" *ngIf=\"hall\">\n                {{hall.name}}:\n                <ul>\n                    <li>Oppervlakte: {{hall.surface}}m\u00B2</li>\n                    <li>Aantal items: {{hall.items.length}}</li>\n                </ul>\n            </div>\n        ",
                         styles: ["\n        .hallQuickView {\n            background-color:#eaeae1;\n            cursor: pointer;\n        }\n\n        li {\n            list-style-type: none;\n        }\n    "]
                     }), 
                     __metadata('design:paramtypes', [router_1.Router, router_1.RouteParams])

@@ -4,40 +4,86 @@
 import {Component, OnInit} from 'angular2/core';
 import {Hall} from "./hall";
 import {HallService} from "./hall.service";
-import {ItemDetailComponent} from "./../item/item-detail.component";
 import {RouteParams,Router} from "angular2/router";
 import {HallPointsDirective} from "./hall-points.directive";
+import {} from '../item/item-circle.directive';
 import {ViewBoxHelperDirective} from "./viewbox-helper.directive";
+import {ItemCircleDirective} from "../item/item-circle.directive";
+import {Item} from "../item/item";
+import {ImageHelperDirective} from "../item/image-helper.directive"
 
 @Component({
     selector: 'hall-detail',
     inputs: ['hall'],
     template: `
-            <div class="hallDetails" *ngIf="hall">
-                <h2>{{hall.name}} details!</h2><h4>Oppervlakte: {{hall.surface}}m²</h4>
-                <h4>Aantal items: {{hall.items.length}}</h4>
-                <h4>Aantal items met actie vereist: {{hall.itemsRequiringAction.length}}</h4>
+            <div  *ngIf="hall">
+                <div class="hallInfo">
+                    <h2>{{hall.name}} details!</h2><h4>Oppervlakte: {{hall.surface}}m²</h4>
+                    <h4>Aantal items: {{hall.items.length}}</h4>
+                    <h4 *ngIf="itemsWithAction">Aantal items met actie: {{itemsWithAction.length}}</h4>
+                </div>
 
-                <svg [viewBoxHelper]="halls" [hall]="hall" height="100%" width="100%">
-                    <polygon [hallPoints]="hall" [hall]="hall" (click)="onSelect(hall)"/>
-                </svg>
+                <div class="hallMap">
+                    <svg [viewBoxHelper]="halls" [hall]="hall" height="100%" width="100%">
+                        <polygon [hallPoints]="hall" [hall]="hall" (click)="onSelect(hall)"/>
+                        <circle *ngFor="#item of hall.items" [itemCircle]="item" [item]="item" [time]="time" [radius]="hall.circleRadius" (click)="onSelect(item)"/>
+                        <image *ngFor="#item of hall.items" [imageHelper]="item" [item]="item" [radius]="hall.circleRadius" (click)="onSelect(item)"></image>
+                    </svg>
+                </div>
             </div>
         `,
     styles: [`
-        .hallDetails {
-            background-color:#eaeae1;
+        li {
+            list-style-type:none;
+        }
+
+        .hallInfo {
+            width: 40%;
+            float: left;
+        }
+
+        .hallMap {
+            width: 55%;
+            float: right;
         }
     `],
-    directives: [HallPointsDirective,ViewBoxHelperDirective]
+    directives: [HallPointsDirective,ViewBoxHelperDirective,ItemCircleDirective,ImageHelperDirective]
 })
 export class HallDetailComponent implements OnInit{
     public hall: Hall;
+    private time:number;
+    private itemsWithAction:Item[];
     constructor(private _hallService:HallService,
                 private _router:Router,
                 private _routeParams:RouteParams) { }
 
     ngOnInit() {
         let name = this._routeParams.get('name');
-        this._hallService.getHall(name).then(hall => this.hall = hall);
+        this._hallService.getActionReminderTimer().then(time => this.time = time);
+        this._hallService.getHall(name).then(hall => this.hall = hall).then(hall => this.getItemsWithAction(hall));
+    }
+
+    getItemsWithAction(hall: Hall) {
+        if (this.hall != null) {
+            this.itemsWithAction = [];
+            var upperDate:Date = this.getUpperDate();
+            for (var i = 0; i < this.hall.items.length; i++) {
+                var itemDate:Date = new Date(this.hall.items[i].nextAction.date);
+                if (itemDate < upperDate) {
+                    this.itemsWithAction.push(this.hall.items[i]);
+                }
+            }
+        }
+    }
+
+    getUpperDate():Date {
+        var date = new Date();
+        var milisToAdd = this.time*60*60*1000;
+        date.setTime(date.getTime() + milisToAdd);
+        return date;
+    }
+
+    onSelect(item: Item) {
+        this._router.navigate(['ItemDetail', {name:this.hall.name,itemname:item.name}])
     }
 }

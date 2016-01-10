@@ -9,6 +9,9 @@ import {HallListComponent} from './hall/hall-list.component';
 import {HallBluePrintComponent} from './hall/hall-blueprint.component';
 import {OnInit} from 'angular2/core';
 import {RouteConfig,ROUTER_DIRECTIVES} from "angular2/router";
+import {ItemDetailComponent} from "./item/item-detail.component";
+import {} from './settings/settings.component';
+import {SettingsComponent} from "./settings/settings.component";
 
 @Component({
     selector: 'factory',
@@ -17,6 +20,8 @@ import {RouteConfig,ROUTER_DIRECTIVES} from "angular2/router";
         <nav>
             <a [routerLink]="['List']">List</a>
             <a [routerLink]="['BluePrint']">Map</a>
+            <a [routerLink]="['Settings']">Settings</a>
+
         </nav>
         <router-outlet></router-outlet>
     `,
@@ -26,12 +31,13 @@ import {RouteConfig,ROUTER_DIRECTIVES} from "angular2/router";
 @RouteConfig([
     {path:'/list',              name: 'List',      component:HallListComponent},
     {path:'/blueprint',         name: 'BluePrint',  component:HallBluePrintComponent},
-    {path:'/hall/:name',         name: 'HallDetail',  component:HallDetailComponent}
+    {path:'/hall/:name',         name: 'HallDetail',  component:HallDetailComponent},
+    {path:'/hall/:name/item/:itemname',         name: 'ItemDetail',  component:ItemDetailComponent},
+    {path:'/settings',          name: 'Settings',  component:SettingsComponent}
 ])
 export class Factory implements OnInit{
     public name = 'GoodId';
     public halls: Hall[];
-    public actionReminderTime: number = 86400000;
 
     constructor(private _hallService: HallService){}
     getHalls() {

@@ -57,10 +57,12 @@ System.register(['angular2/core'], function(exports_1) {
                     this.renderer.setElementAttribute(this.el, "style", colorString);
                 };
                 HallPointsDirective.prototype.onMouseEnter = function () {
-                    this.setColor(this._hall.highLightColor, this._hall.borderColor);
+                    if (this._offset)
+                        this.setColor(this._hall.highLightColor, this._hall.borderColor);
                 };
                 HallPointsDirective.prototype.onMouseLeave = function () {
-                    this.setColor(this._hall.color, this._hall.borderColor);
+                    if (this._offset)
+                        this.setColor(this._hall.color, this._hall.borderColor);
                 };
                 __decorate([
                     core_1.Input('hallPoints'), 

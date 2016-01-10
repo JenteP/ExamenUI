@@ -1,1 +1,1 @@
-{"version":3,"file":"action.js","sourceRoot":"","sources":["action.ts"],"names":[],"mappings":""}
+{"version":3,"file":"action.js","sourceRoot":"","sources":["action.ts"],"names":["Action","Action.constructor"],"mappings":";;;;;YACA;;eAEG;YACH;gBAAAA;gBAKAC,CAACA;gBAADD,aAACA;YAADA,CAACA,AALD,IAKC;YALD,2BAKC,CAAA"}
