@@ -17,18 +17,18 @@ import {ImageHelperDirective} from "../item/image-helper.directive"
     inputs: ['hall'],
     template: `
             <div  *ngIf="hall">
-                <div class="hallInfo">
-                    <h2>{{hall.name}} details!</h2><h4>Oppervlakte: {{hall.surface}}m²</h4>
-                    <h4>Aantal items: {{hall.items.length}}</h4>
-                    <h4 *ngIf="itemsWithAction">Aantal items met actie: {{itemsWithAction.length}}</h4>
-                </div>
-
                 <div class="hallMap">
                     <svg [viewBoxHelper]="halls" [hall]="hall" height="100%" width="100%">
                         <polygon [hallPoints]="hall" [hall]="hall" (click)="onSelect(hall)"/>
                         <circle *ngFor="#item of hall.items" [itemCircle]="item" [item]="item" [time]="time" [radius]="hall.circleRadius" (click)="onSelect(item)"/>
                         <image *ngFor="#item of hall.items" [imageHelper]="item" [item]="item" [radius]="hall.circleRadius" (click)="onSelect(item)"></image>
                     </svg>
+                </div>
+
+                <div class="hallInfo">
+                    <h2>{{hall.name}} details!</h2><h4>Oppervlakte: {{hall.surface}}m²</h4>
+                    <h4>Aantal items: {{hall.items.length}}</h4>
+                    <h4 *ngIf="itemsWithAction">Aantal items met actie: {{itemsWithAction.length}}</h4>
                 </div>
             </div>
         `,
@@ -37,14 +37,18 @@ import {ImageHelperDirective} from "../item/image-helper.directive"
             list-style-type:none;
         }
 
-        .hallInfo {
-            width: 40%;
-            float: left;
+        circle {
+            cursor: pointer;
+        }
+
+        image {
+            cursor: pointer;
         }
 
         .hallMap {
-            width: 55%;
-            float: right;
+            width:80%;
+            max-width: 150em;
+            float:left;
         }
     `],
     directives: [HallPointsDirective,ViewBoxHelperDirective,ItemCircleDirective,ImageHelperDirective]

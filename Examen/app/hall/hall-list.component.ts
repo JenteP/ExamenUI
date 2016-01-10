@@ -14,12 +14,23 @@ import {Router} from "angular2/router";
     template: `
         <h3>Hall List:</h3>
         <div class="halls">
-            <div *ngFor="#hall of halls"
+            <div class="hallOverview" *ngFor="#hall of halls"
                 (click)="onSelect(hall)">
                 <hall-quickview [hall]="hall"></hall-quickview>
             </div>
         </div>
     `,
+    styles: [`
+        .hallOverview {
+            padding:0;
+            margin:0;
+        }
+
+        .halls {
+            padding:0;
+        }
+
+    `],
     directives: [HallQuickViewComponent],
     providers: [HallService]
 })

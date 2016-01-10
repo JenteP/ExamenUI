@@ -18,34 +18,44 @@ System.register([], function(exports_1) {
                 { "name": "Production", "surface": 300,
                     "items": [
                         { "category": "LAMP", "name": "ProductionLamp001",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "next" },
+                            "productNumber": "PLMP001", "description": "A lamp in the production hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
                             "point": { "x": 10, "y": 10 }
-                        },
-                        { "category": "BELT", "name": "ProductionBelt001",
-                            "productNumber": "PBND001", "description": "A freakin band",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 20, "y": 50 }
-                        },
-                        { "category": "LAMP", "name": "ProductionLamp002",
-                            "productNumber": "PLMP002", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 10, "y": 70 }
+                        }, { "category": "LAMP", "name": "ProductionLamp002",
+                            "productNumber": "PLMP002", "description": "A lamp in the production hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 35, "y": 50 }
                         },
                         { "category": "LAMP", "name": "ProductionLamp003",
-                            "productNumber": "PLMP003", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "REPLACEMENT", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
+                            "productNumber": "PLMP003", "description": "A lamp in the production hall",
+                            "lastAction": { "date": lastDate, "type": "REPLACEMENT", "description": "Bulb defective" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
                             "point": { "x": 80, "y": 60 }
                         },
-                        { "category": "MACHINE", "name": "ProductionMachine001",
-                            "productNumber": "PMAC001", "description": "A freakin machine",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
+                        { "category": "BELT", "name": "ProductionBelt001",
+                            "productNumber": "PBLT001", "description": "A belt in the production hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 20, "y": 40 }
+                        },
+                        { "category": "BELT", "name": "ProductionBelt002",
+                            "productNumber": "PBLT002", "description": "A belt in the production hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
                             "point": { "x": 40, "y": 60 }
+                        },
+                        { "category": "MACHINE", "name": "ProductionMachine001",
+                            "productNumber": "PMAC001", "description": "A machine in the production hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 60, "y": 60 }
+                        }, { "category": "MACHINE", "name": "ProductionMachine002",
+                            "productNumber": "PMAC002", "description": "A machine in the production hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 20, "y": 20 }
                         }],
                     "origin": {
                         "x": 0,
@@ -88,17 +98,29 @@ System.register([], function(exports_1) {
                 },
                 { "name": "Reception", "surface": 60,
                     "items": [
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 10, "y": 10 }
+                        { "category": "LAMP", "name": "ReceptionLamp001",
+                            "productNumber": "RLMP001", "description": "A lamp in the reception hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 5, "y": 10 }
                         },
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 20, "y": 10 }
+                        { "category": "LAMP", "name": "ReceptionLamp001",
+                            "productNumber": "RLMP001", "description": "A lamp in the reception hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 25, "y": 10 }
+                        },
+                        { "category": "MACHINE", "name": "ReceptionMachine001",
+                            "productNumber": "RMAC001", "description": "A machine in the reception hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 5, "y": 5 }
+                        },
+                        { "category": "MACHINE", "name": "ReceptionMachine002",
+                            "productNumber": "RMAC002", "description": "A machine in the reception hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 25, "y": 5 }
                         }],
                     "origin": {
                         "x": 0,
@@ -123,23 +145,53 @@ System.register([], function(exports_1) {
                 },
                 { "name": "Shipping", "surface": 200,
                     "items": [
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
+                        { "category": "LAMP", "name": "ShippingLamp001",
+                            "productNumber": "SLMP001", "description": "A lamp in the shipping hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 10, "y": 17 }
+                        },
+                        { "category": "LAMP", "name": "ShippingLamp002",
+                            "productNumber": "SLMP002", "description": "A lamp in the shipping hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 40, "y": 17 }
+                        },
+                        { "category": "LAMP", "name": "ShippingLamp003",
+                            "productNumber": "SLMP003", "description": "A lamp in the shipping hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 40, "y": 30 }
+                        },
+                        { "category": "BELT", "name": "ShippingBelt001",
+                            "productNumber": "SBLT001", "description": "A belt in the shipping hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
                             "point": { "x": 10, "y": 10 }
                         },
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 60, "y": 10 }
+                        { "category": "BELT", "name": "ShippingBelt002",
+                            "productNumber": "SBLT002", "description": "A belt in the shipping hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 25, "y": 10 }
                         },
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP003", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 50, "y": 30 }
+                        { "category": "BELT", "name": "ShippingBelt003",
+                            "productNumber": "SBLT003", "description": "A belt in the shipping hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 40, "y": 10 }
+                        },
+                        { "category": "MACHINE", "name": "ShippingMachine001",
+                            "productNumber": "SMAC001", "description": "A machine in the shipping hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 50, "y": 3 }
+                        },
+                        { "category": "MACHINE", "name": "ShippingMachine002",
+                            "productNumber": "SMAC002", "description": "A machine in the shipping hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 55, "y": 3 }
                         }],
                     "origin": {
                         "x": 40,
@@ -202,21 +254,75 @@ System.register([], function(exports_1) {
                     "color": "green",
                     "borderColor": "darkgreen",
                     "highLightColor": "lightgreen",
-                    "circleRadius": 5
+                    "circleRadius": 2
                 },
                 { "name": "Packaging", "surface": 200,
                     "items": [
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
+                        { "category": "LAMP", "name": "PackagingLamp001",
+                            "productNumber": "PALMP001", "description": "A lamp in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
                             "point": { "x": 10, "y": 10 }
                         },
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 30, "y": 20 }
+                        { "category": "LAMP", "name": "PackagingLamp002",
+                            "productNumber": "PALMP002", "description": "A lamp in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 10, "y": 25 }
+                        },
+                        { "category": "LAMP", "name": "PackagingLamp003",
+                            "productNumber": "PALMP003", "description": "A lamp in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 30, "y": 25 }
+                        },
+                        { "category": "LAMP", "name": "PackagingLamp004",
+                            "productNumber": "PALMP004", "description": "A lamp in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 50, "y": 25 }
+                        },
+                        { "category": "LAMP", "name": "PackagingLamp005",
+                            "productNumber": "PALMP005", "description": "A lamp in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 10, "y": 40 }
+                        },
+                        { "category": "LAMP", "name": "PackagingLamp006",
+                            "productNumber": "PALMP006", "description": "A lamp in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 30, "y": 40 }
+                        },
+                        { "category": "LAMP", "name": "PackagingLamp007",
+                            "productNumber": "PALMP007", "description": "A lamp in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 50, "y": 40 }
+                        },
+                        { "category": "MACHINE", "name": "PackagingMachine001",
+                            "productNumber": "PAMAC001", "description": "A machine in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 20, "y": 25 }
+                        },
+                        { "category": "MACHINE", "name": "PackagingMachine002",
+                            "productNumber": "PAMAC002", "description": "A machine in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 40, "y": 25 }
+                        },
+                        { "category": "MACHINE", "name": "PackagingMachine003",
+                            "productNumber": "PAMAC003", "description": "A machine in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 20, "y": 40 }
+                        },
+                        { "category": "MACHINE", "name": "PackagingMachine004",
+                            "productNumber": "PAMAC004", "description": "A machine in the packaging hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 40, "y": 40 }
                         }],
                     "origin": {
                         "x": 40,
@@ -247,17 +353,17 @@ System.register([], function(exports_1) {
                 },
                 { "name": "Hall", "surface": 20,
                     "items": [
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 10, "y": 10 }
+                        { "category": "LAMP", "name": "HallLamp001",
+                            "productNumber": "HLMP001", "description": "A lamp in the hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 5, "y": 3 }
                         },
-                        { "category": "LAMP", "name": "ProductionLamp",
-                            "productNumber": "PLMP001", "description": "A freakin lamp",
-                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "last" },
-                            "nextAction": { "date": nextDate, "type": "MAINTENANCE", "description": "next" },
-                            "point": { "x": 30, "y": 20 }
+                        { "category": "LAMP", "name": "HallLamp002",
+                            "productNumber": "HLMP002", "description": "A lamp in the hall",
+                            "lastAction": { "date": lastDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "nextAction": { "date": nextActionDate, "type": "MAINTENANCE", "description": "Regular maintenance" },
+                            "point": { "x": 5, "y": 17 }
                         }],
                     "origin": {
                         "x": 30,

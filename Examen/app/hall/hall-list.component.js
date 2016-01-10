@@ -41,7 +41,8 @@ System.register(['angular2/core', './hall.service', "./hall-quickview.component"
                 HallListComponent = __decorate([
                     core_1.Component({
                         selector: 'hall-list',
-                        template: "\n        <h3>Hall List:</h3>\n        <div class=\"halls\">\n            <div *ngFor=\"#hall of halls\"\n                (click)=\"onSelect(hall)\">\n                <hall-quickview [hall]=\"hall\"></hall-quickview>\n            </div>\n        </div>\n    ",
+                        template: "\n        <h3>Hall List:</h3>\n        <div class=\"halls\">\n            <div class=\"hallOverview\" *ngFor=\"#hall of halls\"\n                (click)=\"onSelect(hall)\">\n                <hall-quickview [hall]=\"hall\"></hall-quickview>\n            </div>\n        </div>\n    ",
+                        styles: ["\n        .hallOverview {\n            padding:0;\n            margin:0;\n        }\n\n        .halls {\n            padding:0;\n        }\n\n    "],
                         directives: [hall_quickview_component_1.HallQuickViewComponent],
                         providers: [hall_service_1.HallService]
                     }), 

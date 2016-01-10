@@ -6,22 +6,22 @@ import {Hall} from "./hall";
 import {HallService} from "./hall.service";
 import {ItemDetailComponent} from "./../item/item-detail.component";
 import {RouteParams,Router} from "angular2/router";
+import {Input} from "angular2/core";
 
 @Component({
     selector: 'hall-quickview',
-    inputs: ['hall'],
     template: `
-            <div class="hallQuickView" *ngIf="hall">
-                {{hall.name}}:
+            <div class="hallQuickView" *ngIf="_hall">
+                <span [style.color]="_hall.color">{{_hall.name}}:</span>
                 <ul>
-                    <li>Oppervlakte: {{hall.surface}}m²</li>
-                    <li>Aantal items: {{hall.items.length}}</li>
+                    <li>Oppervlakte: {{_hall.surface}}m²</li>
+                    <li>Aantal items: {{_hall.items.length}}</li>
                 </ul>
             </div>
         `,
     styles: [`
         .hallQuickView {
-            background-color:#eaeae1;
+            border:solid 1px #eaeae1;
             cursor: pointer;
         }
 
@@ -31,7 +31,12 @@ import {RouteParams,Router} from "angular2/router";
     `]
 })
 export class HallQuickViewComponent{
-    public hall: Hall;
+    private _hall: Hall;
+    @Input() set hall(hall:Hall) {
+        this._hall = hall;
+    }
     constructor(private _router:Router,
-                private _routeParams:RouteParams) {}
+                private _routeParams:RouteParams) {
+
+    }
 }

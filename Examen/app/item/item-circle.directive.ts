@@ -29,6 +29,16 @@ export class ItemCircleDirective {
     }
 
     private defineCircle() {
+        if (new Date(this._item.nextAction.date) < this.getUpperDate()) {
+            this.renderer.setElementAttribute(this.el,"cx",""+this._item.point.x);
+            this.renderer.setElementAttribute(this.el,"cy",""+this._item.point.y);
+            this.renderer.setElementAttribute(this.el,"r",""+this._radius);
+            this.renderer.setElementAttribute(this.el, "fill","red");
+            this.renderer.setElementAttribute(this.el, "stroke","black");
+            this.renderer.setElementAttribute(this.el, "stroke-width",""+(this._radius/5));
+        }
+
+        /*
         this.renderer.setElementAttribute(this.el,"cx",""+this._item.point.x);
         this.renderer.setElementAttribute(this.el,"cy",""+this._item.point.y);
         this.renderer.setElementAttribute(this.el,"r",""+this._radius);
@@ -38,6 +48,7 @@ export class ItemCircleDirective {
         this.renderer.setElementAttribute(this.el, "fill",color);
         this.renderer.setElementAttribute(this.el, "stroke","black");
         this.renderer.setElementAttribute(this.el, "stroke-width",""+(this._radius/5));
+        */
     }
 
     getUpperDate():Date {

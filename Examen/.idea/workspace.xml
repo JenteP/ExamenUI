@@ -2,73 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fed38f62-5d50-4efe-aabd-49d8a1d91fc5" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/action-type.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/action-type.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/action-type.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/action-type.service.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/action-type.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/action-type.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/mock-action-types.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/mock-action-types.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/action/mock-action-types.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/hall/hall-title.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/hall/hall-title.directive.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/hall/hall-title.directive.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/category.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/category.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/category.service.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/category.service.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/category.service.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/category.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/image-helper.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/image-helper.directive.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/image-helper.directive.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/item-circle.directive.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/item-circle.directive.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/item-circle.directive.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/mock-categories.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/mock-categories.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/item/mock-categories.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/settings/settings.component.js" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/settings/settings.component.js.map" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/settings/settings.component.ts" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icons/belt.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icons/lamp.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icons/machine.svg" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/icons/settings.svg" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/action/action-detail.component.js" afterPath="$PROJECT_DIR$/app/action/action-detail.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/action/action-detail.component.js.map" afterPath="$PROJECT_DIR$/app/action/action-detail.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/action/action-detail.component.ts" afterPath="$PROJECT_DIR$/app/action/action-detail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/action/action.js" afterPath="$PROJECT_DIR$/app/action/action.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/action/action.js.map" afterPath="$PROJECT_DIR$/app/action/action.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/action/action.ts" afterPath="$PROJECT_DIR$/app/action/action.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/factory.component.js" afterPath="$PROJECT_DIR$/app/factory.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/factory.component.js.map" afterPath="$PROJECT_DIR$/app/factory.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/factory.component.ts" afterPath="$PROJECT_DIR$/app/factory.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-blueprint.component.js" afterPath="$PROJECT_DIR$/app/hall/hall-blueprint.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-blueprint.component.js.map" afterPath="$PROJECT_DIR$/app/hall/hall-blueprint.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-blueprint.component.ts" afterPath="$PROJECT_DIR$/app/hall/hall-blueprint.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-detail.component.js" afterPath="$PROJECT_DIR$/app/hall/hall-detail.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-detail.component.js.map" afterPath="$PROJECT_DIR$/app/hall/hall-detail.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-detail.component.ts" afterPath="$PROJECT_DIR$/app/hall/hall-detail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-points.directive.js" afterPath="$PROJECT_DIR$/app/hall/hall-points.directive.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-points.directive.js.map" afterPath="$PROJECT_DIR$/app/hall/hall-points.directive.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-points.directive.ts" afterPath="$PROJECT_DIR$/app/hall/hall-points.directive.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-list.component.js" afterPath="$PROJECT_DIR$/app/hall/hall-list.component.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-list.component.js.map" afterPath="$PROJECT_DIR$/app/hall/hall-list.component.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-list.component.ts" afterPath="$PROJECT_DIR$/app/hall/hall-list.component.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-quickview.component.js" afterPath="$PROJECT_DIR$/app/hall/hall-quickview.component.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-quickview.component.js.map" afterPath="$PROJECT_DIR$/app/hall/hall-quickview.component.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall-quickview.component.ts" afterPath="$PROJECT_DIR$/app/hall/hall-quickview.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall.service.js" afterPath="$PROJECT_DIR$/app/hall/hall.service.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall.service.js.map" afterPath="$PROJECT_DIR$/app/hall/hall.service.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall.service.ts" afterPath="$PROJECT_DIR$/app/hall/hall.service.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/hall.ts" afterPath="$PROJECT_DIR$/app/hall/hall.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/mock-halls.js" afterPath="$PROJECT_DIR$/app/hall/mock-halls.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/mock-halls.js.map" afterPath="$PROJECT_DIR$/app/hall/mock-halls.js.map" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/hall/mock-halls.ts" afterPath="$PROJECT_DIR$/app/hall/mock-halls.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/item/item-detail.component.js" afterPath="$PROJECT_DIR$/app/item/item-detail.component.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/item/item-detail.component.js.map" afterPath="$PROJECT_DIR$/app/item/item-detail.component.js.map" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/item/item-detail.component.ts" afterPath="$PROJECT_DIR$/app/item/item-detail.component.ts" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/item/item.ts" afterPath="$PROJECT_DIR$/app/item/item.ts" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/item/item-circle.directive.js" afterPath="$PROJECT_DIR$/app/item/item-circle.directive.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/item/item-circle.directive.js.map" afterPath="$PROJECT_DIR$/app/item/item-circle.directive.js.map" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/item/item-circle.directive.ts" afterPath="$PROJECT_DIR$/app/item/item-circle.directive.ts" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.css" afterPath="$PROJECT_DIR$/main.css" />
     </list>
     <ignored path="Examen.iws" />
@@ -94,31 +46,85 @@
         <entry file="file://$PROJECT_DIR$/app/hall/hall-detail.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="49" column="100" selection-start-line="49" selection-start-column="100" selection-end-line="49" selection-end-column="100" />
+              <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
               <folding>
-                <marker date="1452355469644" expanded="true" signature="673:1612" placeholder="..." />
-                <marker date="1452355469644" expanded="true" signature="712:996" placeholder="..." />
-                <marker date="1452355469644" expanded="true" signature="1035:1593" placeholder="..." />
-                <marker date="1452355469644" expanded="true" signature="1126:1570" placeholder="..." />
+                <marker date="1452443163785" expanded="true" signature="673:1612" placeholder="..." />
+                <marker date="1452443163785" expanded="true" signature="711:1269" placeholder="..." />
+                <marker date="1452443163785" expanded="true" signature="802:1246" placeholder="..." />
+                <marker date="1452443163785" expanded="true" signature="1309:1593" placeholder="..." />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mock-halls.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/hall/mock-halls.ts">
+      <file leaf-file-name="hall-list.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/hall/hall-list.component.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
+              <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+              <folding>
+                <marker date="1452442723200" expanded="true" signature="457:659" placeholder="..." />
+                <marker date="1452442723200" expanded="true" signature="520:644" placeholder="..." />
+                <marker date="1452442723200" expanded="true" signature="561:644" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/main.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="-0.0">
+              <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action-detail.component.ts" pinned="false" current-in-tab="true">
+      <file leaf-file-name="mock-halls.ts" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/hall/mock-halls.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="4.0630083">
+              <caret line="372" column="40" selection-start-line="372" selection-start-column="40" selection-end-line="372" selection-end-column="40" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hall-quickview.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/hall/hall-quickview.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+              <folding>
+                <marker date="1452442723191" expanded="true" signature="428:691" placeholder="..." />
+                <marker date="1452442723191" expanded="true" signature="522:672" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="hall-blueprint.component.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/hall/hall-blueprint.component.ts">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+              <folding>
+                <marker date="1452442891261" expanded="true" signature="624:834" placeholder="..." />
+                <marker date="1452442891261" expanded="true" signature="641:819" placeholder="..." />
+                <marker date="1452442891261" expanded="true" signature="711:801" placeholder="..." />
+                <marker date="1452442891261" expanded="true" signature="865:1287" placeholder="..." />
+                <marker date="1452442891261" expanded="true" signature="950:1272" placeholder="..." />
+                <marker date="1452442891261" expanded="true" signature="1019:1253" placeholder="..." />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="action-detail.component.ts" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/action/action-detail.component.ts">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-1.3309352">
+            <state vertical-scroll-proportion="0.0">
               <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
               <folding>
                 <marker date="1452436590313" expanded="true" signature="496:1027" placeholder="..." />
@@ -131,24 +137,12 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="action.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/action/action.ts">
+      <file leaf-file-name="item-circle.directive.ts" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/item/item-circle.directive.ts">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="12" selection-start-line="4" selection-start-column="12" selection-end-line="4" selection-end-column="12" />
+              <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
               <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="action-type.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/action/action-type.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="4" column="16" selection-start-line="4" selection-start-column="16" selection-end-line="4" selection-end-column="16" />
-              <folding>
-                <element signature="n#!!doc;n#ActionType#0" expanded="false" />
-              </folding>
             </state>
           </provider>
         </entry>
@@ -158,38 +152,6 @@
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
               <caret line="5" column="23" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="mock-action-types.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/action/mock-action-types.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="6" column="22" selection-start-line="6" selection-start-column="22" selection-end-line="6" selection-end-column="22" />
-              <folding>
-                <element signature="e#42#84#0" expanded="false" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="image-helper.directive.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/item/image-helper.directive.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="category.service.ts" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/item/category.service.ts">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="16" column="1" selection-start-line="0" selection-start-column="0" selection-end-line="16" selection-end-column="1" />
               <folding />
             </state>
           </provider>
@@ -254,34 +216,34 @@
         <option value="$PROJECT_DIR$/index.html" />
         <option value="$PROJECT_DIR$/app/boot.ts" />
         <option value="$PROJECT_DIR$/app/hall/hall-overview.ts" />
-        <option value="$PROJECT_DIR$/app/hall/hall-list.component.ts" />
         <option value="$PROJECT_DIR$/app/hall/viewbox-helper.directive.ts" />
         <option value="$PROJECT_DIR$/app/item/itemType.ts" />
         <option value="$PROJECT_DIR$/app/hall/hall-points.directive.ts" />
-        <option value="$PROJECT_DIR$/app/hall/hall-quickview.component.ts" />
         <option value="$PROJECT_DIR$/app/factory.component.ts" />
         <option value="$PROJECT_DIR$/app/settings/settings.component.ts" />
         <option value="$PROJECT_DIR$/app/hall/hall.service.ts" />
         <option value="$PROJECT_DIR$/app/hall/hall.ts" />
         <option value="$PROJECT_DIR$/app/hall/hall-title.directive.ts" />
-        <option value="$PROJECT_DIR$/main.css" />
-        <option value="$PROJECT_DIR$/app/hall/hall-blueprint.component.ts" />
-        <option value="$PROJECT_DIR$/app/hall/hall-detail.component.ts" />
         <option value="$PROJECT_DIR$/app/item/category.ts" />
         <option value="$PROJECT_DIR$/app/item/mock-categories.ts" />
         <option value="$PROJECT_DIR$/app/item/item.ts" />
         <option value="$PROJECT_DIR$/app/item/category.service.ts" />
-        <option value="$PROJECT_DIR$/app/item/item-circle.directive.ts" />
         <option value="$PROJECT_DIR$/app/item/image-helper.directive.ts" />
         <option value="$PROJECT_DIR$/app/action/action.service.ts" />
         <option value="$PROJECT_DIR$/app/action/mock-actions.ts" />
         <option value="$PROJECT_DIR$/app/action/action-type.ts" />
         <option value="$PROJECT_DIR$/app/action/mock-action-types.ts" />
         <option value="$PROJECT_DIR$/app/action/action-type.service.ts" />
-        <option value="$PROJECT_DIR$/app/hall/mock-halls.ts" />
         <option value="$PROJECT_DIR$/app/action/action.ts" />
         <option value="$PROJECT_DIR$/app/item/item-detail.component.ts" />
         <option value="$PROJECT_DIR$/app/action/action-detail.component.ts" />
+        <option value="$PROJECT_DIR$/app/item/item-circle.directive.ts" />
+        <option value="$PROJECT_DIR$/main.css" />
+        <option value="$PROJECT_DIR$/app/hall/hall-list.component.ts" />
+        <option value="$PROJECT_DIR$/app/hall/hall-quickview.component.ts" />
+        <option value="$PROJECT_DIR$/app/hall/hall-blueprint.component.ts" />
+        <option value="$PROJECT_DIR$/app/hall/hall-detail.component.ts" />
+        <option value="$PROJECT_DIR$/app/hall/mock-halls.ts" />
       </list>
     </option>
   </component>
@@ -291,9 +253,10 @@
     <detection-done>true</detection-done>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-8" />
-    <option name="width" value="956" />
-    <option name="height" value="1038" />
+    <option name="x" value="-9" />
+    <option name="y" value="-9" />
+    <option name="width" value="1938" />
+    <option name="height" value="1048" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
@@ -543,7 +506,13 @@
       <option name="project" value="LOCAL" />
       <updated>1452200970857</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="fixing almost everything">
+      <created>1452440144686</created>
+      <option name="number" value="00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1452440144686</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TodoView">
@@ -556,27 +525,27 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="0" width="956" height="1038" extended-state="0" />
+    <frame x="-9" y="-9" width="1938" height="1048" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2546652" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.12255679" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="TypeScript Compiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32383123" sideWeight="0.49624062" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.50590765" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32839224" sideWeight="0.49409238" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28620297" sideWeight="0.49624062" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3295325" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32839224" sideWeight="0.50590765" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32807216" sideWeight="0.49409238" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.28297633" sideWeight="0.49624062" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32919955" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -594,7 +563,8 @@
     <MESSAGE value="vcs in webstorm" />
     <MESSAGE value="simple routing" />
     <MESSAGE value="routing + svg" />
-    <option name="LAST_COMMIT_MESSAGE" value="routing + svg" />
+    <MESSAGE value="fixing almost everything" />
+    <option name="LAST_COMMIT_MESSAGE" value="fixing almost everything" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -613,6 +583,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <marker date="1452209802597" expanded="true" signature="748:920" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -620,6 +593,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -628,10 +602,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
-            <marker date="1452355469644" expanded="true" signature="673:1612" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="712:996" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="1035:1593" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="1126:1570" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="673:1612" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="711:1269" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="802:1246" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="1309:1593" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -648,6 +622,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#Hall#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -655,6 +632,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc;n#Item#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -691,6 +671,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="7" column="37" selection-start-line="7" selection-start-column="37" selection-end-line="7" selection-end-column="37" />
+          <folding>
+            <marker date="1452209802597" expanded="true" signature="748:920" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -698,6 +681,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="12" column="12" selection-start-line="12" selection-start-column="12" selection-end-line="12" selection-end-column="12" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -706,10 +690,10 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="36" selection-start-line="14" selection-start-column="36" selection-end-line="14" selection-end-column="36" />
           <folding>
-            <marker date="1452355469644" expanded="true" signature="673:1612" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="712:996" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="1035:1593" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="1126:1570" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="673:1612" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="711:1269" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="802:1246" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="1309:1593" placeholder="..." />
           </folding>
         </state>
       </provider>
@@ -726,6 +710,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc;n#Hall#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -733,6 +720,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2" column="3" selection-start-line="2" selection-start-column="3" selection-end-line="2" selection-end-column="3" />
+          <folding>
+            <element signature="n#!!doc;n#Item#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -769,6 +759,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="22" column="0" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -797,6 +788,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="10" column="29" selection-start-line="10" selection-start-column="29" selection-end-line="10" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -804,13 +796,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="43" column="13" selection-start-line="43" selection-start-column="13" selection-end-line="43" selection-end-column="13" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/hall/hall-list.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="33" column="63" selection-start-line="33" selection-start-column="8" selection-end-line="33" selection-end-column="63" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -818,6 +804,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="14" column="23" selection-start-line="14" selection-start-column="23" selection-end-line="14" selection-end-column="23" />
+          <folding>
+            <element signature="n#!!doc;n#Hall#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -825,20 +814,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="26" selection-start-line="0" selection-start-column="0" selection-end-line="59" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/hall/hall-quickview.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="23" column="37" selection-start-line="23" selection-start-column="12" selection-end-line="23" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/main.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.4193548">
-          <caret line="2" column="17" selection-start-line="2" selection-start-column="17" selection-end-line="2" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -846,13 +822,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/hall/hall-blueprint.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="18" selection-start-line="31" selection-start-column="18" selection-end-line="31" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -860,6 +830,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="48" column="1" selection-start-line="3" selection-start-column="0" selection-end-line="48" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -867,6 +838,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="5" column="17" selection-start-line="5" selection-start-column="17" selection-end-line="5" selection-end-column="17" />
+          <folding>
+            <element signature="n#!!doc;n#Category#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -874,6 +848,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="9" column="26" selection-start-line="9" selection-start-column="26" selection-end-line="9" selection-end-column="26" />
+          <folding>
+            <element signature="n#!!doc;n#Item#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -881,6 +858,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="13" column="21" selection-start-line="13" selection-start-column="21" selection-end-line="13" selection-end-column="21" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -888,6 +866,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="41" column="49" selection-start-line="41" selection-start-column="49" selection-end-line="41" selection-end-column="49" />
+          <folding>
+            <marker date="1452209802597" expanded="true" signature="748:920" placeholder="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -895,13 +876,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="16" column="28" selection-start-line="16" selection-start-column="28" selection-end-line="16" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/item/item-circle.directive.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="39" column="84" selection-start-line="39" selection-start-column="84" selection-end-line="39" selection-end-column="84" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -910,19 +885,6 @@
         <state vertical-scroll-proportion="0.0">
           <caret line="32" column="31" selection-start-line="32" selection-start-column="31" selection-end-line="32" selection-end-column="31" />
           <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/hall/hall-detail.component.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="49" column="100" selection-start-line="49" selection-start-column="100" selection-end-line="49" selection-end-column="100" />
-          <folding>
-            <marker date="1452355469644" expanded="true" signature="673:1612" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="712:996" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="1035:1593" placeholder="..." />
-            <marker date="1452355469644" expanded="true" signature="1126:1570" placeholder="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -951,14 +913,6 @@
           <folding>
             <element signature="e#42#84#0" expanded="false" />
           </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/hall/mock-halls.ts">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="51" column="15" selection-start-line="51" selection-start-column="15" selection-end-line="51" selection-end-column="15" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -998,7 +952,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/action/action-detail.component.ts">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-1.3309352">
+        <state vertical-scroll-proportion="0.0">
           <caret line="24" column="36" selection-start-line="24" selection-start-column="36" selection-end-line="24" selection-end-column="36" />
           <folding>
             <marker date="1452436590313" expanded="true" signature="496:1027" placeholder="..." />
@@ -1007,6 +961,81 @@
             <marker date="1452436590313" expanded="true" signature="726:830" placeholder="..." />
             <marker date="1452436590313" expanded="true" signature="890:1008" placeholder="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/item/item-circle.directive.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="34" column="75" selection-start-line="34" selection-start-column="75" selection-end-line="34" selection-end-column="75" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="6" selection-start-line="0" selection-start-column="6" selection-end-line="0" selection-end-column="6" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/hall/hall-list.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="22" selection-start-line="29" selection-start-column="22" selection-end-line="29" selection-end-column="22" />
+          <folding>
+            <marker date="1452442723200" expanded="true" signature="457:659" placeholder="..." />
+            <marker date="1452442723200" expanded="true" signature="520:644" placeholder="..." />
+            <marker date="1452442723200" expanded="true" signature="561:644" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/hall/hall-quickview.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="23" column="37" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+          <folding>
+            <marker date="1452442723191" expanded="true" signature="428:691" placeholder="..." />
+            <marker date="1452442723191" expanded="true" signature="522:672" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/hall/hall-blueprint.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="48" column="28" selection-start-line="48" selection-start-column="28" selection-end-line="48" selection-end-column="28" />
+          <folding>
+            <marker date="1452442891261" expanded="true" signature="624:834" placeholder="..." />
+            <marker date="1452442891261" expanded="true" signature="641:819" placeholder="..." />
+            <marker date="1452442891261" expanded="true" signature="711:801" placeholder="..." />
+            <marker date="1452442891261" expanded="true" signature="865:1287" placeholder="..." />
+            <marker date="1452442891261" expanded="true" signature="950:1272" placeholder="..." />
+            <marker date="1452442891261" expanded="true" signature="1019:1253" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/hall/hall-detail.component.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="35" column="12" selection-start-line="35" selection-start-column="12" selection-end-line="35" selection-end-column="12" />
+          <folding>
+            <marker date="1452443163785" expanded="true" signature="673:1612" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="711:1269" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="802:1246" placeholder="..." />
+            <marker date="1452443163785" expanded="true" signature="1309:1593" placeholder="..." />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/hall/mock-halls.ts">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.0630083">
+          <caret line="372" column="40" selection-start-line="372" selection-start-column="40" selection-end-line="372" selection-end-column="40" />
+          <folding />
         </state>
       </provider>
     </entry>

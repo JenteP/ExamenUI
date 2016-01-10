@@ -46,6 +46,7 @@ import {HallTitleDirective} from "./hall-title.directive";
         }
 
         .hallInfo {
+            max-width: 20em;
             width: 40%;
             float: left;
         }
